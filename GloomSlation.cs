@@ -326,7 +326,12 @@ namespace GloomSlation
         public override void OnSceneWasInitialized(int buildIndex, string sceneName)
         {
             var scene = SceneManager.GetSceneByBuildIndex(buildIndex);
-            postInitAdjustVisitor.RunAdjustments(scene.GetRootGameObjects(), sceneName);
+            RunAdjustments(scene.GetRootGameObjects(), sceneName);
+        }
+
+        public void RunAdjustments(GameObject[] roots, string scene) {
+            DebugMsg($"Run adjustments for {scene}");
+            postInitAdjustVisitor.RunAdjustments(roots, scene);
         }
 
         /// Construct localization entry ID from GameObject name and original text
@@ -445,6 +450,20 @@ namespace GloomSlation
                     }
                 );
             }
+
+            // Difficulty select description
+            // Increase text container width
+            postInitAdjustVisitor.AddAdjustment<TMPro.TextMeshProUGUI>(
+                false,
+                "MainWindow/MenuManager/Menu_Canvas/Menu_NewGame/Menu_Canvas/Menu_Panel/Menu_Panel_Features/Menu_Container_Difficulty_Features/UILayoutGroup_Vertical/MenuElement_Text_Difficulty_Features",
+                "UIManager",
+                tmp => {
+                    tmp.alignment = TextAlignmentOptions.Left;
+                    var tf = tmp.rectTransform;
+                    tf.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 680f);
+                    tf.ForceUpdateRectTransforms();
+                }
+            ); 
         }
         
         /// Load texture from disk
@@ -482,7 +501,12 @@ namespace GloomSlation
             // For every object that doesn't have localization component or key, 
             // generate key and try to get localization
             if (!tmp.text.NullOrEmpty()
-                && (component == null || localizedText == null || !localizedText.enabled)
+                && (component == null || localizedText == null
+                    || component.LocalizationId == "OPTION" // Some hardcoded texts have this key 
+                    || component.LocalizationId == "ITEM_"  // Dirty fix for Unbind
+                    || component.LocalizationId == "MENU_NEXT"
+                    || component.LocalizationId == "MENU_EXIT" 
+                )
             )
             {
                 var localeKey = ConstructLocaleKey(tmpObj.name, tmp.text);
@@ -499,7 +523,7 @@ namespace GloomSlation
                     DebugMsg("Found localization!");
                     var previousText = tmp.text;
                     tmp.text = localized;
-
+    
                     // This prevents anything from changing our text back
                     tmp.OnPreRenderText += (ti) =>
                     {
@@ -806,6 +830,17 @@ namespace GloomSlation
         static void Prefix(ref Gloomwood.Sound.SoundAsset __instance)
         {
             Melon<GloomSlation>.Instance.PatchSound(__instance);
+        }
+    }
+
+    /// Adjustments for menus
+    [HarmonyPatch(typeof(Gloomwood.UI.UIManager), "Awake")]
+    static class PatchUIManager
+    {
+        static void Postfix(ref RectTransform ___rectTransform)
+        {
+            GameObject[] roots = {___rectTransform.gameObject};
+            Melon<GloomSlation>.Instance.RunAdjustments(roots, "UIManager");
         }
     }
 }
