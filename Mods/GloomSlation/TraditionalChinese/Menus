@@ -1,0 +1,395 @@
+NONE					= "";
+TITLE_NEWGAME			= "新遊戲";
+TITLE_LOAD				= "載入遊戲";
+TITLE_SETTINGS			= "設定";
+TITLE_QUIT				= "離開遊戲";
+TITLE_STARTGAME			= "開始遊戲";
+
+// New Game Menu
+MENU_NEWGAME_TITLE		= "新遊戲";
+DIFFICULTY_SELECT		= "選擇遊戲難度";
+DIFFICULTY_NAME_EASY	= "新月";
+DIFFICULTY_NAME_MEDIUM	= "半月";
+DIFFICULTY_NAME_HARD	= "滿月";
+DIFFICULTY_NAME_EXPERT	= "血月";
+DIFFICULTY_NAME_CUSTOM	= "藍月";
+DIFFICULTY_DESC_EASY	= "適合不熟悉生存恐怖遊戲，或單純想探索世界的玩家。";
+DIFFICULTY_DESC_MEDIUM	= "適合尋求平衡遊戲體驗的玩家。";
+DIFFICULTY_DESC_HARD	= "適合熟悉生存恐怖遊戲，或尋求挑戰的玩家。";
+DIFFICULTY_DESC_EXPERT	= "適合想要挑戰極限的生存恐怖遊戲老手。";
+DIFFICULTY_FEAT_EASY	= "-資源豐富\n-敵人數量少\n-敵人的傷害、速度與感知較低\n-允許快速儲存與快速載入";
+DIFFICULTY_FEAT_MEDIUM	= "-標準資源量\n-標準敵人數量\n-標準敵人的傷害、速度與感知\n-僅能在留聲機處儲存";
+DIFFICULTY_FEAT_HARD	= "-資源匱乏\n-敵人數量多\n-敵人的傷害、速度與感知較高\n-僅能在留聲機處儲存";
+DIFFICULTY_FEAT_EXPERT	= "-資源極度匱乏\n-敵人數量極多\n-敵人的傷害、速度與感知極高\n-僅能使用蠟筒在留聲機處儲存";
+
+// Saved Game Message
+UI_SAVEMESSAGE			= "遊戲已儲存";
+UI_QUICKSAVE_DISALLOW   = "此處不允許快速儲存";
+UI_AUTOSAVE				= "已自動儲存";
+
+// Brightness Menu
+MENU_BRIGHTNESS_TITLE	= "亮度";
+MENU_BRIGHTNESS_PROMPT	= "調整滑桿直到左側圖像隱約不可見";
+
+// Generic
+MENU_CONFIRM			= "確認";
+MENU_CANCEL				= "取消";
+MENU_NEXT				= "下一步";
+MENU_BACK				= "返回";
+
+// Load Game Menu
+MENU_LOAD_TITLE			= "載入遊戲";
+MENU_LOAD_FILE			= "存檔";
+MENU_LOAD_QUICKSAVE		= "快速儲存";
+
+// Save Game Menu
+MENU_SAVE_TITLE				    = "選擇儲存欄位";
+MENU_SAVE_MODAL_DESC		    = "此操作無法復原！";
+MENU_SAVE_DELETE_MODAL_TITLE    = "確定要刪除此存檔？";
+MENU_SAVE_OVERWRITE_MODAL_TITLE = "確定要覆蓋此存檔？";
+
+// Pause Menu
+MENU_PAUSE_RESUME		= "繼續遊戲";
+MENU_PAUSE_LOAD			= "載入遊戲";
+MENU_PAUSE_SETTINGS		= "設定";
+MENU_PAUSE_TITLE		= "主選單";
+MENU_PAUSE_QUIT			= "離開遊戲";
+
+// Settings Menu
+MENU_SETTINGS_TITLE		= "設定";
+MENU_SETTINGS_GAMEPLAY	= "遊戲性";
+MENU_SETTINGS_CAMERA	= "視角";
+MENU_SETTINGS_VIDEO		= "畫面";
+MENU_SETTINGS_AUDIO		= "音訊";
+MENU_SETTINGS_CONTROLS	= "控制";
+MENU_SETTINGS_INPUT		= "輸入";
+MENU_BCG_BRIGHTNESS		= "亮度 / 伽瑪";
+MENU_BCG_CONTRAST		= "對比度";
+
+// Settings Gameplay Menu
+OPTION_FORMAT_BULLET	= "{0}:";
+OPTION_FORMAT_COLON		= "{0}:";
+OPTION_ENABLED			= "開啟";
+OPTION_DISABLED			= "關閉";
+OPTION_YES              = "是";
+OPTION_NO               = "否";
+OPTION_TOGGLE           = "切換";
+OPTION_HOLD             = "按住";
+OPTION_OFF				= "關閉";
+OPTION_BLOB				= "簡易";
+OPTION_LOW				= "低";
+OPTION_MEDIUM			= "中";
+OPTION_HIGH				= "高";
+OPTION_ULTRA			= "極高";
+OPTION_APPLY			= "套用";
+OPTION_RESET			= "重設";
+OPTION_BACK				= "返回";
+OPTION_TUTORIALS		= "啟用教學提示";
+OPTION_QUICKSAVE		= "允許快速儲存";
+OPTION_CROSSHAIR		= "顯示準心";
+OPTION_VISIONCONES		= "顯示視野錐體";
+OPTION_VC_OFF			= "關閉";
+OPTION_VC_MONO			= "單色";
+OPTION_VC_COLORED		= "彩色";
+OPTION_HIGHLIGHTS		= "啟用互動高亮";
+OPTION_HL_BRIGHTNESS	= "高亮亮度";
+OPTION_HL_COLOR			= "高亮色彩";
+OPTION_HL_COLOR_R		= "紅色";
+OPTION_HL_COLOR_G		= "綠色";
+OPTION_HL_COLOR_B		= "藍色";
+OPTION_INV_GR_OPACITY	= "物品欄網格不透明度";
+OPTION_INV_HL_OPACITY	= "物品欄選取不透明度";
+OPTION_ACTIONLOG		= "啟用動作記錄";
+OPTION_ACTLOG_OFF		= "已停用";
+OPTION_ACTLOG_ON		= "已啟用";
+OPTION_SEASONALCONTENT	= "啟用節慶內容";
+OPTION_DEVCONSOLE		= "啟用開發者主控台";
+
+// Settings Camera Menu
+OPTION_VIEW_FOV			= "水平視野 (FOV)";
+OPTION_VIEW_SENSITIVITY	= "視角靈敏度";
+OPTION_VIEW_SMOOTHING	= "視角平滑";
+OPTION_VIEW_INVERT_Y	= "視角 Y 軸反轉";
+OPTION_VIEW_BOB			= "走動視角晃動幅度";
+OPTION_VIEW_SWAY		= "視角擺動幅度";
+
+// Settings Video Menu
+OPTION_DISPLAY			= "顯示器";
+OPTION_RESOLUTION		= "解析度";
+OPTION_FULLSCREEN		= "全螢幕模式";
+OPTION_FS_EXCLUSIVE		= "獨佔全螢幕";
+OPTION_FS_BORDERLESS	= "無邊框全螢幕";
+OPTION_FS_WINDOWED		= "視窗化";
+OPTION_VSYNC			= "垂直同步";
+OPTION_FRAMERATE		= "幀率限制";
+OPTION_FOV				= "視野 (FOV)";
+OPTION_BRIGHTNESS		= "亮度";
+OPTION_CONTRAST			= "對比度";
+OPTION_GAMMA			= "伽瑪";
+OPTION_DYNSHAD			= "動態陰影品質";
+OPTION_PROJSHAD_QUALITY	= "投射陰影品質";
+OPTION_PROJSHAD_DIST	= "投射陰影距離";
+OPTION_PROJSHAD_OFF		= "關閉";
+OPTION_PROJSHAD_NEAR	= "近";
+OPTION_PROJSHAD_FAR		= "遠";
+OPTION_TF				= "材質過濾";
+OPTION_TF_POINT			= "點過濾 (Point)";
+OPTION_TF_BILINEAR		= "雙線性過濾 (Bilinear)";
+OPTION_AF				= "非等方性過濾 (AF)";
+OPTION_LMR				= "光照貼圖過濾";
+OPTION_LMR_LOW			= "低";
+OPTION_LMR_MEDIUM		= "中";
+OPTION_LMR_HIGH			= "高";
+OPTION_LMR_ULTRA		= "極高";
+OPTION_AA				= "反鋸齒模式";
+OPTION_AA_OFF			= "關閉";
+OPTION_AA_2X			= "2X";
+OPTION_AA_4X			= "4X";
+OPTION_AA_8X			= "8X";
+OPTION_LIGHTFLARES		= "啟用光暈效果";
+OPTION_WEATHERQ		    = "天氣粒子品質";
+OPTION_WEATHERQ_NORMAL		= "標準";
+OPTION_WEATHERQ_LOW			= "低";
+OPTION_WEATHERQ_VERYLOW		= "極低";
+
+// Settings Audio Menu
+OPTION_SPEAKER_MODE		= "揚聲器模式";
+OPTION_SM_STEREO		= "立體聲";
+OPTION_SM_QUAD			= "四聲道";
+OPTION_SM_SURROUND		= "環繞音效";
+OPTION_SM_5point1		= "環繞 5.1";
+OPTION_SM_7point1		= "環繞 7.1";
+OPTION_VOL_MASTER		= "主音量";
+OPTION_VOL_SFX			= "音效音量";
+OPTION_VOL_VOC			= "語音音量";
+OPTION_VOL_AMB			= "環境音量";
+OPTION_VOL_MUSIC		= "音樂音量";
+OPTION_SUB_MODE			= "字幕模式";
+OPTION_SUB_MODE_NONE	= "無";
+OPTION_SUB_MODE_SUB		= "對白";
+OPTION_SUB_MODE_FULL	= "全部";
+
+// Settings Controls Menu
+OPTION_BINDINGS			= "按鍵綁定";
+OPTION_GAMEPAD			= "控制器（即將推出）";
+OPTION_SNEAK			= "潛行切換";
+OPTION_CROUCH			= "蹲下切換";
+OPTION_SWITCHDRAW		= "切換武器拔出模式";
+
+// Brightness Menu
+OPTION_BRIGHT_PROMPT	= "調整亮度直到左側月亮隱約不可見。\n如有必要，調整伽瑪值直到右側月亮不會太暗或太亮。";
+OPTION_CONTRAST_PROMPT	= "調整對比度直到色彩飽滿且不致過於鮮豔。";
+
+// Bindings Menu
+BINDINGS_PROMPT			= "請按任意鍵進行綁定";
+BINDINGS_RESET			= "按鍵綁定已重設為預設值";
+BINDINGS_BIND			= "已綁定至";
+INPUT_MOVE_FORWARD		= "向前移動";
+INPUT_MOVE_BACKWARD		= "向後移動";
+INPUT_MOVE_LEFT			= "向左移動";
+INPUT_MOVE_RIGHT		= "向右移動";
+INPUT_MOVE_CAMERA		= "移動視角";
+INPUT_LEAN_LEFT			= "向左探身";
+INPUT_LEAN_RIGHT		= "向右探身";
+INPUT_JUMP				= "跳躍 / 攀爬";
+INPUT_CROUCH			= "蹲下";
+INPUT_SNEAK				= "潛行";
+INPUT_INTERACT			= "互動";
+INPUT_INVENTORY			= "物品欄";
+INPUT_JOURNAL			= "日誌";
+INPUT_MAP				= "地圖";
+INPUT_LANTERN			= "手提燈";
+INPUT_ZOOM				= "縮放視角";
+INPUT_NEXT_WEAPON		= "下一個武器";
+INPUT_PREVIOUS_WEAPON	= "上一個武器";
+INPUT_LAST_WEAPON		= "上一個使用的武器";
+INPUT_HOLSTER_WEAPON	= "收起武器";
+INPUT_RELOAD_WEAPON		= "重新裝彈";
+INPUT_CHANGE_AMMO_TYPE	= "切換彈藥類型";
+INPUT_PRIMARY_FIRE		= "主要攻擊";
+INPUT_SECONDARY_FIRE	= "次要攻擊";
+INPUT_WEAPON_0			= "武器 0";
+INPUT_WEAPON_1			= "武器 1";
+INPUT_WEAPON_2			= "武器 2";
+INPUT_WEAPON_3			= "武器 3";
+INPUT_WEAPON_4			= "武器 4";
+INPUT_WEAPON_5			= "武器 5";
+INPUT_WEAPON_6			= "武器 6";
+INPUT_WEAPON_7			= "武器 7";
+INPUT_WEAPON_8			= "武器 8";
+INPUT_WEAPON_9			= "武器 9";
+INPUT_SCREENSHOT		= "螢幕截圖";
+INPUT_QUICKSAVE			= "快速儲存";
+INPUT_QUICKLOAD			= "快速載入";
+INPUT_MOUSE_BUTTON_0	= "滑鼠左鍵";
+INPUT_MOUSE_BUTTON_1	= "滑鼠右鍵";
+INPUT_MOUSE_WHEEL_UP	= "滑鼠滾輪向上";
+INPUT_MOUSE_WHEEL_DOWN	= "滑鼠滾輪向下";
+
+// Title Confirm
+MENU_TITLE_PROMPT		= "返回標題選單？";
+
+// Quit Confirm
+MENU_QUIT_PROMPT		= "要離開這座可憎的城鎮嗎？";
+
+// Modifiers
+KEY_NONE				= "無";
+KEY_SHIFT				= "Shift 鍵";
+KEY_ALT					= "Alt 鍵";
+KEY_CONTROL				= "Ctrl 鍵";
+
+// Mouse
+KEY_MOUSE				= "滑鼠";
+KEY_MOUSE_X				= "滑鼠 X 軸";
+KEY_MOUSE_Y				= "滑鼠 Y 軸";
+KEY_MOUSE_SCROLLWHEEL	= "滑鼠滾輪";
+KEY_MOUSEWHEELUP		= "滑鼠滾輪向上";
+KEY_MOUSEWHEELDOWN		= "滑鼠滾輪向下";
+KEY_MOUSE0				= "滑鼠左鍵";
+KEY_MOUSE1				= "滑鼠右鍵";
+KEY_MOUSE2				= "滑鼠中鍵";
+KEY_MOUSE3				= "滑鼠鍵 3";
+KEY_MOUSE4				= "滑鼠鍵 4";
+KEY_MOUSE5				= "滑鼠鍵 5";
+KEY_MOUSE6				= "滑鼠鍵 6";
+
+// Keyboard
+KEY_BACKSPACE			= "Backspace 鍵";
+KEY_DELETE				= "Delete 鍵";
+KEY_TAB					= "Tab 鍵";
+KEY_CLEAR				= "Clear 鍵";
+KEY_RETURN				= "Enter 鍵";
+KEY_PAUSE				= "Pause 鍵";
+KEY_ESCAPE				= "Esc 鍵";
+KEY_SPACE				= "空白鍵";
+KEY_KEYPAD0				= "數字鍵盤 0";
+KEY_KEYPAD1				= "數字鍵盤 1";
+KEY_KEYPAD2				= "數字鍵盤 2";
+KEY_KEYPAD3				= "數字鍵盤 3";
+KEY_KEYPAD4				= "數字鍵盤 4";
+KEY_KEYPAD5				= "數字鍵盤 5";
+KEY_KEYPAD6				= "數字鍵盤 6";
+KEY_KEYPAD7				= "數字鍵盤 7";
+KEY_KEYPAD8				= "數字鍵盤 8";
+KEY_KEYPAD9				= "數字鍵盤 9";
+KEY_KEYPADPERIOD		= "數字鍵盤 .";
+KEY_KEYPADDIVIDE		= "數字鍵盤 /";
+KEY_KEYPADMULTIPLY		= "數字鍵盤 *";
+KEY_KEYPADMINUS			= "數字鍵盤 -";
+KEY_KEYPADPLUS			= "數字鍵盤 +";
+KEY_KEYPADENTER			= "數字鍵盤 Enter";
+KEY_KEYPADEQUALS		= "數字鍵盤 =";
+KEY_UPARROW				= "向上方向鍵";
+KEY_DOWNARROW			= "向下方向鍵";
+KEY_RIGHTARROW			= "向右方向鍵";
+KEY_LEFTARROW			= "向左方向鍵";
+KEY_INSERT				= "Insert 鍵";
+KEY_HOME				= "Home 鍵";
+KEY_END					= "End 鍵";
+KEY_PAGEUP				= "Page Up 鍵";
+KEY_PAGEDOWN			= "Page Down 鍵";
+KEY_F1					= "F1";
+KEY_F2					= "F2";
+KEY_F3					= "F3";
+KEY_F4					= "F4";
+KEY_F5					= "F5";
+KEY_F6					= "F6";
+KEY_F7					= "F7";
+KEY_F8					= "F8";
+KEY_F9					= "F9";
+KEY_F10					= "F10";
+KEY_F11					= "F11";
+KEY_F12					= "F12";
+KEY_ALPHA0				= "0";
+KEY_ALPHA1				= "1";
+KEY_ALPHA2				= "2";
+KEY_ALPHA3				= "3";
+KEY_ALPHA4				= "4";
+KEY_ALPHA5				= "5";
+KEY_ALPHA6				= "6";
+KEY_ALPHA7				= "7";
+KEY_ALPHA8				= "8";
+KEY_ALPHA9				= "9";
+KEY_EXCLAIM				= "!";
+KEY_DOUBLEQUOTE			= "\"";
+KEY_HASH				= "#";
+KEY_DOLLAR				= "$";
+KEY_PERCENT				= "%";
+KEY_AMPERSAND			= "&";
+KEY_QUOTE				= "'";
+KEY_LEFTPAREN			= "(";
+KEY_RIGHTPAREN			= ")";
+KEY_ASTERISK			= "*";
+KEY_PLUS				= "+";
+KEY_COMMA				= ",";
+KEY_MINUS				= "-";
+KEY_PERIOD				= ".";
+KEY_SLASH				= "/";
+KEY_COLON				= ":";
+KEY_SEMICOLON			= ";";
+KEY_LESS				= "<";
+KEY_EQUALS				= "=";
+KEY_GREATER				= ">";
+KEY_QUESTION			= "?";
+KEY_AT					= "@";
+KEY_LEFTBRACKET			= "[";
+KEY_BACKSLASH			= "\\";
+KEY_RIGHTBRACKET		= "]";
+KEY_CARET				= "^";
+KEY_UNDERSCORE			= "_";
+KEY_BACKQUOTE			= "`";
+KEY_A					= "A";
+KEY_B					= "B";
+KEY_C					= "C";
+KEY_D					= "D";
+KEY_E					= "E";
+KEY_F					= "F";
+KEY_G					= "G";
+KEY_H					= "H";
+KEY_I					= "I";
+KEY_J					= "J";
+KEY_K					= "K";
+KEY_L					= "L";
+KEY_M					= "M";
+KEY_N					= "N";
+KEY_O					= "O";
+KEY_P					= "P";
+KEY_Q					= "Q";
+KEY_R					= "R";
+KEY_S					= "S";
+KEY_T					= "T";
+KEY_U					= "U";
+KEY_V					= "V";
+KEY_W					= "W";
+KEY_X					= "X";
+KEY_Y					= "Y";
+KEY_Z					= "Z";
+KEY_LEFTCURLYBRACKET	= "{";
+KEY_PIPE				= "|";
+KEY_RIGHTCURLYBRACKET	= "}";
+KEY_TILDE				= "~";
+KEY_NUMLOCK				= "Num Lock 鍵";
+KEY_CAPSLOCK			= "Caps Lock 鍵";
+KEY_SCROLLLOCK			= "Scroll Lock 鍵";
+KEY_RIGHTSHIFT			= "右 Shift 鍵";
+KEY_LEFTSHIFT			= "左 Shift 鍵";
+KEY_RIGHTCONTROL		= "右 Ctrl 鍵";
+KEY_LEFTCONTROL			= "左 Ctrl 鍵";
+KEY_RIGHTALT			= "右 Alt 鍵";
+KEY_LEFTALT				= "左 Alt 鍵";
+KEY_LEFTCOMMAND			= "左 Command 鍵";
+KEY_LEFTAPPLE			= "左 Apple 鍵";
+KEY_LEFTWINDOWS			= "左 Windows 鍵";
+KEY_RIGHTCOMMAND		= "右 Command 鍵";
+KEY_RIGHTAPPLE			= "右 Apple 鍵";
+KEY_RIGHTWINDOWS		= "右 Windows 鍵";
+KEY_ALTGR				= "Alt Gr 鍵";
+KEY_HELP				= "Help 鍵";
+KEY_PRINT				= "Print Screen 鍵";
+KEY_SYSREQ				= "Sys Req 鍵";
+KEY_BREAK				= "Break 鍵";
+KEY_MENU				= "選單鍵";
+
+// Intro
+INTRO_NEWBLOOD					= "New Blood Interactive\n呈獻";
+INTRO_DEVELOPERS				= "遊戲製作\nDillon Rogers 與 David Szymanski";

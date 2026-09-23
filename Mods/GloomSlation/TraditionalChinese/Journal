@@ -1,0 +1,131 @@
+NONE							= "";
+
+//-------------------------------------------------------------
+// Tabs
+
+TAB_STATUS						= "狀態";
+TAB_DIAGNOSIS					= "診斷報告";
+TAB_FILES						= "檔案";
+TAB_DOCUMENTS					= "文件";
+TAB_MAPS						= "地圖";
+TAB_KEYS						= "鑰匙";
+TAB_RESEARCH					= "研究";
+TAB_ANATOMY						= "解剖學";
+TAB_PATHOLOGY					= "病理學";
+TAB_ANALYSIS					= "分析";
+
+//-------------------------------------------------------------
+// Header
+
+HEADER_STATUS					= "生理狀態";
+HEADER_DIAGNOSIS				= "診斷報告";
+HEADER_FILES					= "檔案";
+HEADER_DOCUMENTS				= "文件";
+HEADER_DOCUMENTS_CONT			= "文件（續）";
+HEADER_MAPS						= "地圖";
+HEADER_MAPS_CONT				= "地圖（續）";
+HEADER_KEYS						= "鑰匙";
+HEADER_KEYS_CONT				= "鑰匙（續）";
+HEADER_RESEARCH					= "研究";
+HEADER_ANATOMY					= "解剖學";
+HEADER_PATHOLOGY				= "病理學";
+HEADER_ANALYSIS					= "分析";
+
+//-------------------------------------------------------------
+// Status
+
+CONDITION_LIFE					= "生命值";
+CONDITION_MIND					= "心智";
+CONDITION_EXCELLENT				= "極佳";
+CONDITION_FINE					= "良好";
+CONDITION_CAUTION				= "注意";
+CONDITION_DANGER				= "危險";
+CONDITION_EFFECT_LIST			= "症狀";
+
+//-------------------------------------------------------------
+// Research
+
+// Research
+ENTRY_CROWKING					= "鴉族長老";
+ENTRY_FISHDOG					= "水生犬";
+ENTRY_HUNTSMAN_WOODSMAN			= "獵手／樵夫";
+ENTRY_RAT						= "老鼠";
+
+DESCRIPTION_ANATOMY				= "尋找並解剖樣本。";
+DESCRIPTION_PATHOLOGY			= "研究樣本解剖構造以研發血清配方。";
+ENTRY_COMPLETE					= "- 已完成";
+ENTRY_UNKNOWN					= "未知";
+ANATOMY_PARTS					= "部位";
+SERUM_PREFIX					= "血清：";
+SERUM_DOSES						= "劑量";
+SERUM_UNKNOWN					= "未知血清";
+PASSIVE_PREFIX					= "特質：";
+
+IDENTIFIER_HEAD					= "頭部";
+IDENTIFIER_TORSO				= "軀幹";
+IDENTIFIER_LEFTARM				= "左臂";
+IDENTIFIER_RIGHTARM				= "右臂";
+IDENTIFIER_RIGHTLEG				= "右腿";
+IDENTIFIER_LEFTLEG				= "左腿";
+IDENTIFIER_PELVIS				= "骨盆";
+IDENTIFIER_LEFTHORN				= "左角";
+IDENTIFIER_RIGHTHORN			= "右角";
+IDENTIFIER_TAIL					= "尾部";
+IDENTIFIER_RIGHTHAND			= "右手";
+IDENTIFIER_RIGHTUPPERARM		= "右上臂";
+
+//-------------------------------------------------------------
+// Research - Huntsman
+
+ENTRY_HUNTSMAN					= "獵人";
+ENTRY_HUNTSMAN_SPECIES			= "獵手（Homo Venatores）";
+ENTRY_HUNTSMAN_SERUM_NAME		= "獵手菌株";
+ENTRY_HUNTSMAN_SERUM_DESC		= "強化對附近所有受感染生命體的感知能力（即使隔著實心牆壁亦然），並能在一段時間內與其他獵人建立同族親和。此形態下亦可使用常規武器。";
+ENTRY_HUNTSMAN_PASSIVE_NAME		= "獵人印記";
+ENTRY_HUNTSMAN_PASSIVE_DESC		= "對所有獵人變種增加物理傷害與彈道爆頭傷害。";
+
+RESEARCH_HUNTSMAN_1				= "樣本「獵手」（Homo Venatores）為當地獵人公會的前人類成員。該樣本身著皮革長袍、頭戴寬邊帽，並佩戴帶有護目鏡的面罩以便執行偵察行動。";
+RESEARCH_HUNTSMAN_2				= "感染加劇了該樣本的攻擊性、降低了其智力，並強化了其對其他帶有傳染源之生命體的感知能力。";
+RESEARCH_HUNTSMAN_3				= "其社會階級使該樣本群體能輕易互相警戒與傳遞情報，但也因此容易受到誘騙。牠們同時攜帶各類武器與護具，但通常缺乏熟練的使用技巧。";
+
+//-------------------------------------------------------------
+// Research - Goatman
+
+ENTRY_GOATMAN					= "羊人 - A型";
+ENTRY_GOATMAN_SPECIES			= "山羊怪（Homo Caprae）";
+ENTRY_GOATMAN_SERUM_NAME		= "山羊怪菌株";
+ENTRY_GOATMAN_SERUM_DESC		= "在一段時間內獲得非凡的物理與彈道防禦力、強大的近戰威力以及投擲力量。";
+ENTRY_GOATMAN_PASSIVE_NAME		= "山羊活力";
+ENTRY_GOATMAN_PASSIVE_DESC		= "提高物理與彈道防禦力。";
+
+RESEARCH_GOATMAN_1				= "樣本「山羊怪」（Homo Caprae）為身高八呎九吋、具山羊特徵的雙足人形生物。其舌部構造似乎能發出些許低沉的喉音言語。";
+RESEARCH_GOATMAN_2				= "感染使其全身形成致密的肌肉群，並將各處骨骼重塑為角質般的犄角與偶蹄。";
+RESEARCH_GOATMAN_3				= "濃密的毛皮使其易受火焰傷害，但火焰也可能激怒該樣本使其陷入狂暴。狂暴時，該樣本會轉為四足著地姿態以大幅提升移動速度。";
+
+//-------------------------------------------------------------
+// Research - Batbarber
+
+ENTRY_BATBARBER					= "蝠獸 - A型";
+ENTRY_BATBARBER_SPECIES			= "蝙蝠怪（Vesper Sapiens）";
+ENTRY_BATBARBER_SERUM_NAME		= "蝠獸菌株";
+ENTRY_BATBARBER_SERUM_DESC		= "在一段時間內獲得強大的跳躍與攀爬能力、極大幅減少墜落傷害，並能與其他蝠獸建立短暫的同族親和。";
+ENTRY_BATBARBER_PASSIVE_NAME	= "翼行敏捷";
+ENTRY_BATBARBER_PASSIVE_DESC	= "提升跳躍高度並減少墜落傷害。";
+
+RESEARCH_BATBARBER_1			= "樣本「蝙蝠怪」（Vesper Sapiens）為人蝠嵌合體，身高略高於四呎，體態佝僂，雙臂與指骨顯著拉長。";
+RESEARCH_BATBARBER_2			= "感染使該樣本的骨骼結構縮小，同時擴大了雙耳與鼻部，賦予其更敏銳的感官感知能力。";
+RESEARCH_BATBARBER_3			= "儘管不具備飛行能力，該樣本卻無比靈敏，能自高處躍下而不受損傷。牠似乎亦能使用各類工具。";
+
+//-------------------------------------------------------------
+// Research - Crowman
+
+ENTRY_CROWMAN					= "鴉人 - A型";
+ENTRY_CROWMAN_SPECIES			= "直立鴉人（Corvus Orthograde）";
+ENTRY_CROWMAN_SERUM_NAME		= "鴉族菌株";
+ENTRY_CROWMAN_SERUM_DESC		= "在一段時間內大幅提升奔跑與蹲伏移動速度、獲得攻擊血肉以恢復生命值的能力，並與其他鴉獸建立短暫的同族親和。";
+ENTRY_CROWMAN_PASSIVE_NAME		= "鴉族敏捷";
+ENTRY_CROWMAN_PASSIVE_DESC		= "提升收起武器時的奔跑速度。";
+
+RESEARCH_CROWMAN_1				= "樣本「直立鴉人」（Corvus Orthograde）為身高七呎的人形烏鴉嵌合體，生有巨大、突出且呈骨質的尖喙。";
+RESEARCH_CROWMAN_2				= "感染在其脊髓周圍形成了硬化的骨質結構，保護其免受多數物理傷害。";
+RESEARCH_CROWMAN_3				= "該樣本身上似乎穿著某種服飾。目前尚無法斷定這些衣物是拾荒所得，亦或是原生身軀的一部分。";

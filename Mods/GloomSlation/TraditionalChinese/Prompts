@@ -1,0 +1,78 @@
+NONE							= "";
+
+NOTE_INVENTORY_MANUAL_BODY		= "感謝您購買紳士提箱！\n請注意以下重要使用提示：\n <font=\"Postamt SDF\"> \n切換裝備與收納空間：<color=#840601> {INPUT:SNEAK}</color>\n\n關閉物品欄：<color=#840601> {INPUT:INVENTORY}</color>\n\n\n選擇模式 \n\n武器快捷鍵：<color=#840601>{INPUT:SLOT_0}-{INPUT:SLOT_9}</color>\n\n拾取物品：<color=#840601>{INPUT:LMB}</color> 或 <color=#840601>{INPUT:RELOAD}</color>\n\n物品動作選單：<color=#840601>{INPUT:INTERACT}</color> 或 <color=#840601>{INPUT:RMB}</color>\n\n檢視物品：<color=#840601>{INPUT:LASTWEAPON}</color>\n\n快速丟棄：<color=#840601>{INPUT:ZOOM}</color>\n\n\n放置模式 \n\n放置物品：<color=#840601>{INPUT:LMB}</color>、<color=#840601>{INPUT:INTERACT}</color> 或 <color=#840601>{INPUT:RELOAD}</color>\n\n移動物品：<color=#840601>{INPUT:MOVEFORWARD}</color>、<color=#840601>{INPUT:MOVELEFT}</color>、<color=#840601>{INPUT:MOVEBACKWARD}</color>、<color=#840601>{INPUT:MOVERIGHT}</color>\n\n旋轉物品（向左）：<color=#840601>{INPUT:LEANLEFT}</color>\n\n旋轉物品（向右）：<color=#840601>{INPUT:LEANRIGHT}</color>\n\n快速收起：<color=#840601>{INPUT:INVENTORY}</color></font>";
+
+//-------------------------------------------------------------
+// Action Log
+
+ACTIONLOG_INVENTORY_INVALIDPOS		= "無法在此放置物品";
+ACTIONLOG_INVENTORY_FULL			= "物品欄已滿";
+ACTIONLOG_PICKUP_READABLE			= "已取得讀物 {READABLE}";
+ACTIONLOG_PICKUP_KEY				= "已取得鑰匙 {ITEM}";
+ACTIONLOG_PICKUP_REQUIREMENT		= "需要 {ITEM}";
+ACTIONLOG_RESEARCH_ITEM				= "已研究 {ITEM}";
+ACTIONLOG_RESEARCH_DUPLICATE_ITEM	= "{ITEM} 已經研究過";
+ACTIONLOG_RESEARCH_FORMULA			= "發現血清成分 {ITEM}";
+ACTIONLOG_RESEARCH_COMPLETE			= "已完成對 {ITEM} 的分析";
+ACTIONLOG_RESEARCH_PASSIVE			= "已解鎖特質 {ITEM}";
+ACTIONLOG_DROP_ITEM					= "物品欄已滿 - 已丟棄 {ITEM}";
+ACTIONLOG_BEASTFORM_INVALIDUSE		= "變身狀態下無法使用";
+ACTIONLOG_CANNOT_USE_ITEM			= "無法使用該物品";
+
+//-------------------------------------------------------------
+// Tutorial
+
+TUTORIAL_USE					= "使用";
+TUTORIAL_HOLD					= "按住";
+TUTORIAL_RELEASE				= "放開";
+TUTORIAL_INPUT					= "[{0}]";
+TUTORIAL_MOVEMENT				= "使用 {MOVEFORWARD} {MOVELEFT} {MOVEBACKWARD} {MOVERIGHT} 移動角色";
+TUTORIAL_CAMERA					= "使用 {MOVECAMERA} 移動視角";
+TUTORIAL_MANTLE					= "按住 {JUMP} 進行跳躍並攀上邊緣";
+TUTORIAL_STAND					= "使用 {CROUCH} 站立";
+TUTORIAL_CROUCH					= "使用 {CROUCH} 蹲下";
+TUTORIAL_PICKUP					= "使用 {INTERACT} 拾取物品";
+TUTORIAL_VISIBILITY_1			= "按住 {SNEAK} 潛行";
+TUTORIAL_VISIBILITY_2			= "你的 {RING} 顯示你目前的隱蔽程度";
+TUTORIAL_RING					= "戒指";
+TUTORIAL_LANDING				= "在柔軟表面上走動與著陸比在硬質表面上更安靜";
+TUTORIAL_INVENTORY_PICKUP		= "使用 {INTERACT} 拾起你的手提箱";
+TUTORIAL_INVENTORY_OPEN			= "使用 {INVENTORY} 打開你的手提箱";
+TUTORIAL_INVENTORY_EQUIPMENT	= "使用 {FLIP} 翻至裝備面板";
+TUTORIAL_INVENTORY_STORAGE		= "使用 {FLIP} 翻回收納面板";
+TUTORIAL_INVENTORY_INSPECT		= "使用 {ALTFIRE} 檢視光晶戒指";
+TUTORIAL_INVENTORY_DRAG			= "使用 {PRIMARYFIRE} 拾取物品並移入手提箱或移出";
+TUTORIAL_INVENTORY_FLIP			= "使用 {FLIP} 在裝備與收納面板之間切換";
+TUTORIAL_INVENTORY_CLOSE		= "使用 {INVENTORY} 關閉手提箱";
+TUTORIAL_JOURNAL				= "使用 {JOURNAL} 打開你的日誌";
+TUTORIAL_DOOR_OPEN_1			= "使用 {INTERACT} 開門";
+TUTORIAL_DOOR_OPEN_2			= "按住 {INTERACT} 緩慢（且安靜地）開門";
+TUTORIAL_PICKPOCKET				= "使用 {INTERACT} 偷取守衛身上的 {KEY}";
+TUTORIAL_KEY					= "鑰匙";
+TUTORIAL_FOOTSTEP_LOUD			= "注意金屬等聲音較大的地面材質";
+TUTORIAL_PHONOGRAPH_1			= "對留聲機使用 {INTERACT} 以儲存進度";
+TUTORIAL_PHONOGRAPH_2			= "按住 {INTERACT} 選擇新的儲存欄位";
+TUTORIAL_THROW_1				= "按住 {INTERACT} 搬起瓶子";
+TUTORIAL_THROW_2				= "接著使用 {FIRE} 投擲";
+TUTORIAL_HOLSTER_1				= "按下 {HOLSTER} 收起武器";
+TUTORIAL_HOLSTER_2				= "收起武器能讓你移動得更快";
+TUTORIAL_CANESWORD_SWIPE_1		= "輕按 {FIRE} 進行揮擊";
+TUTORIAL_CANESWORD_THRUST_1		= "按住 {FIRE} 直到劍尖閃爍";
+TUTORIAL_CANESWORD_THRUST_2		= "放開即可背刺";
+TUTORIAL_LEANING_1				= "按住 {LEANLEFT} 向左探身";
+TUTORIAL_LEANING_2				= "按住 {LEANRIGHT} 向右探身";
+TUTORIAL_EAVESDROP				= "貼在門上探身即可偷聽門後動靜";
+TUTORIAL_LANTERN_PICKUP			= "使用 {INTERACT} 拾取手提燈";
+TUTORIAL_LANTERN_DRAW			= "使用 {LANTERN} 拿出或收起手提燈";
+TUTORIAL_REVOLVER_RELOAD		= "使用 {RELOAD} 重新裝彈";
+TUTORIAL_REVOLVER_CHECKAMMO		= "按住 {RELOAD} 檢查彈藥";
+TUTORIAL_HARPOONGUN_ROPE_1		= "使用 {ALTFIRE} 進行瞄準";
+TUTORIAL_HARPOONGUN_ROPE_2		= "使用 {FIRE} 將繩索射入柔軟表面";
+TUTORIAL_TRAP_THROW				= "使用 {PRIMARYFIRE} 投擲陷阱";
+TUTORIAL_TRAP_PLACE				= "按住 {ALTFIRE} 並使用 {PRIMARYFIRE} 放置陷阱";
+TUTORIAL_AMMOTYPE_CHANGE		= "使用 {CHANGEAMMO} 切換彈藥類型";
+TUTORIAL_AMMOTYPE_BIND			= "彈藥類型可以在物品欄中指派快捷鍵";
+TUTORIAL_MONOCLE_ZOOM			= "使用 {ZOOM} 透過單片眼鏡的鏡片縮放視野";
+TUTORIAL_SHOP_SELL				= "將貴重物品放在 {PLACEMAT} 上即可出售";
+TUTORIAL_SHOP_SELL_PLACEMAT		= "置物墊";
+TUTORIAL_RESEARCH_ENABLED		= "燈塔的實驗室正在呼喚著你";

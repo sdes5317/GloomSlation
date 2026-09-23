@@ -1,0 +1,825 @@
+NULL							= "";
+NONE							= "無";
+
+// Item Slots
+SLOT_MELEE						= "近戰";
+SLOT_OFFHAND					= "副手";
+SLOT_HEAD						= "頭部";
+SLOT_EYE						= "眼部";
+SLOT_RING						= "戒指";
+SLOT_CURRENCY					= "黃金";
+SLOT_JOURNAL					= "日誌";
+
+// Condition
+CONDITION						= "狀況";
+CONDITION_FINE					= "良好";
+CONDITION_CAUTION				= "注意";
+CONDITION_DANGER				= "危險";
+
+// Shop
+SHOP_DISCOUNT					= "特價！";
+SHOP_SOLDOUT					= "售罄！";
+
+// Research
+RESEARCH_AVAILABLE				= "可進行研究";
+RESEARCH_COMPLETE				= "研究已完成";
+RESEARCH_SUBSTANCE				= "可能具有科學價值";
+
+// Item Actions
+ITEM_EQUIP						= "裝備";
+ITEM_UNEQUIP					= "卸下";
+ITEM_DRAW						= "拔出";
+ITEM_USE						= "使用";
+ITEM_EXAMINE					= "檢視";
+ITEM_HOLD						= "拿取";
+ITEM_UNLOAD						= "卸彈";
+ITEM_SPLIT						= "拆封";
+ITEM_DROP						= "丟棄";
+ITEM_QUANTITY					= "數量";
+ITEM_LOADEDTYPE					= "彈藥類型";
+ITEM_LOADEDQUANTITY				= "彈藥數量";
+
+// Item Action Names
+ITEM_INJECT						= "注射";
+ITEM_OPEN						= "開啟";
+ITEM_EAT						= "吞食";
+ITEM_DRINK						= "痛飲";
+ITEM_READ						= "閱讀";
+ITEM_ZOOM						= "縮放";
+
+ACTIVATE_FULLHEALTH				= "生命值已滿";
+ACTIVATE_FULLINVENTORY			= "無法再攜帶更多此類物品";
+ACTIVATE_SAVEGAME				= "儲存遊戲";
+
+// Item groups
+ITEMGROUP_ALL					= "全部";
+ITEMGROUP_EQUIPMENT				= "裝備";
+ITEMGROUP_CONSUMABLES			= "消耗品";
+ITEMGROUP_FOOD					= "食物";
+ITEMGROUP_WEAPONS				= "武器";
+ITEMGROUP_AMMO					= "彈藥";
+ITEMGROUP_KEYS					= "鑰匙";
+ITEMGROUP_CURRENCY				= "貨幣";
+ITEMGROUP_NOTES					= "筆記";
+
+// Items
+ITEM_BACKPACK_NAME				= "背包";
+ITEM_BACKPACK_DESC				= "一個用來裝載所有物品的背包。";
+
+ITEM_BLOODVIAL_NAME				= "血液樣本瓶";
+ITEM_BLOODVIAL_DESC				= "採集自醫生的血液樣本，用於檢測外傷、毒素與疾病。";
+
+ITEM_JOURNAL_NAME				= "日誌";
+ITEM_JOURNAL_DESC				= "一本包含城鎮各類筆記、文件與地圖的日誌。";
+
+ITEM_HANDLANTERN_NAME			= "手提電燈";
+ITEM_HANDLANTERN_DESC			= "一盞手提電燈，能照亮黑暗，代價是極為顯眼。當地汽船船長間流傳著傳聞，稱此類燈具能驅散從海面滲入的鬼魅濃霧。";
+
+ITEM_HANDLANTERN_BROKEN_NAME	= "損壞的手提電燈";
+ITEM_HANDLANTERN_BROKEN_DESC	= "一盞損壞的手提電燈。現在派不上什麼用場了。";
+
+ITEM_LIGHTGEMRING_NAME			= "光靈寶石戒指";
+ITEM_LIGHTGEMRING_DESC			= "鑲嵌著會對周圍光線產生反應之水晶的戒指。";
+
+ITEM_KEYRING_NAME				= "鑰匙圈";
+ITEM_KEYRING_DESC				= "串著你所找到的所有鑰匙的鑰匙圈。";
+
+ITEM_MEDHYPO_NAME				= "活血藥劑";
+ITEM_MEDHYPO_DESC				= "裝有強力鎮痛劑與抗凝血劑混合調配物的皮下注射器。這劑酊劑標誌性的螢光來自南部沼澤地的一種原生草藥。";
+
+ITEM_MEDKIT_NAME				= "急救箱";
+ITEM_MEDKIT_DESC				= "完全恢復生命值。";
+
+ITEM_MONOCLE_NAME				= "單片眼鏡";
+ITEM_MONOCLE_DESC				= "配有可用於放大觀察的可伸縮鏡片。";
+
+ITEM_MUSICBOX_NAME				= "音樂盒";
+ITEM_MUSICBOX_DESC				= "轉動發條把手以儲存遊戲。";
+
+ITEM_WAXCYLINDER_NAME			= "蠟管";
+ITEM_WAXCYLINDER_DESC			= "用於留聲機的蠟管。用於儲存當前進度。使用後會消耗。";
+
+ITEM_LUGGAGE_UPGRADE_6X4_NAME   = "紳士提箱擴容 (6x4)";
+ITEM_LUGGAGE_UPGRADE_6X4_DESC   = "用於紳士提箱的擴充收納隔層。";
+
+ITEM_LUGGAGE_UPGRADE_7X5_NAME   = "紳士提箱擴容 (7x5)";
+ITEM_LUGGAGE_UPGRADE_7X5_DESC   = "用於紳士提箱的擴充收納隔層。";
+
+ITEM_LUGGAGE_UPGRADE_8X6_NAME   = "紳士提箱擴容 (8x6)";
+ITEM_LUGGAGE_UPGRADE_8X6_DESC   = "用於紳士提箱的擴充收納隔層。";
+
+// Seals
+
+ITEM_SEAL_UNDERPORT_NAME		= "底層港口徽印";
+ITEM_SEAL_UNDERPORT_DESC		= "";
+
+// Food
+ITEM_CHEESE_NAME				= "整輪起司";
+ITEM_CHEESE_DESC				= "一整輪氣味濃烈的起司。本區域大部分乳製品均產自東部山脈遷徙而來的鼻角山羊。";
+
+ITEM_APPLE_NAME					= "蘋果";
+ITEM_APPLE_DESC					= "一顆有些發霉的蘋果。";
+
+ITEM_BREADLOAF_1_NAME           = "麵包條";
+ITEM_BREADLOAF_1_DESC           = "一條放乾變硬的麵包。";
+
+ITEM_BREADLOAF_1_HALF_NAME      = "半條麵包";
+ITEM_BREADLOAF_1_HALF_DESC      = "半條放乾變硬的麵包。";
+
+ITEM_BREADLOAF_1_SLICE_NAME     = "麵包切片";
+ITEM_BREADLOAF_1_SLICE_DESC     = "一片放乾變硬的麵包切片。";
+
+ITEM_CARROT_1_NAME              = "胡蘿蔔";
+ITEM_CARROT_1_DESC              = "一根老舊的胡蘿蔔。";
+
+ITEM_CARROT_1_CHOPPED_NAME      = "切塊胡蘿蔔";
+ITEM_CARROT_1_CHOPPED_DESC      = "一些切塊的老舊胡蘿蔔。";
+
+ITEM_CARROT_2_NAME              = "胡蘿蔔";
+ITEM_CARROT_2_DESC              = "一根老舊的胡蘿蔔。";
+
+ITEM_CARROT_3_NAME              = "胡蘿蔔";
+ITEM_CARROT_3_DESC              = "一根老舊的胡蘿蔔。";
+
+ITEM_CHEESE_WEDGE_1_NAME        = "切塊起司";
+ITEM_CHEESE_WEDGE_1_DESC        = "一塊氣味濃烈的切塊起司。本區域大部分乳製品均產自東部山脈遷徙而來的鼻角山羊。";
+
+ITEM_CORNCOB_1_NAME             = "玉米穗";
+ITEM_CORNCOB_1_DESC             = "一根老舊的玉米穗。";
+
+ITEM_DRIEDPEPPER_1_NAME         = "乾辣椒";
+ITEM_DRIEDPEPPER_1_DESC         = "一根乾辣椒。辛辣無比。";
+
+ITEM_DRIEDPEPPER_2_NAME         = "乾辣椒";
+ITEM_DRIEDPEPPER_2_DESC         = "一根乾辣椒。辛辣無比。";
+
+ITEM_MEAT_BRAIN_1_NAME          = "腦髓";
+ITEM_MEAT_BRAIN_1_DESC          = "某種倒楣生物的腦髓。散發著酸臭味。";
+
+ITEM_MEAT_OFFAL_1_NAME          = "雜碎";
+ITEM_MEAT_OFFAL_1_DESC          = "一堆來源不明的燉煮內臟與腸子。";
+
+ITEM_MEAT_SALAMI_SLICE_1_NAME   = "薩拉米切片";
+ITEM_MEAT_SALAMI_SLICE_1_DESC   = "一片醃製薩拉米肉腸。";
+
+ITEM_MEAT_SALAMI_SLICE_2_NAME   = "薩拉米切片";
+ITEM_MEAT_SALAMI_SLICE_2_DESC   = "一片醃製薩拉米肉腸。";
+
+ITEM_MEAT_SALAMI_SLICE_3_NAME   = "薩拉米切片";
+ITEM_MEAT_SALAMI_SLICE_3_DESC   = "一片醃製薩拉米肉腸。";
+
+ITEM_MEAT_SALAMI_SLICE_4_NAME   = "薩拉米切片";
+ITEM_MEAT_SALAMI_SLICE_4_DESC   = "一片醃製薩拉米肉腸。";
+
+ITEM_MUSHROOM_1_NAME            = "蘑菇";
+ITEM_MUSHROOM_1_DESC            = "一顆帶有濃烈泥土氣息的可食用蘑菇。";
+
+ITEM_ONION_1_NAME               = "洋蔥";
+ITEM_ONION_1_DESC               = "一顆老舊的洋蔥。";
+
+ITEM_POTATO_1_NAME              = "馬鈴薯";
+ITEM_POTATO_1_DESC              = "一顆老舊的馬鈴薯。";
+
+ITEM_POTATO_2_NAME              = "馬鈴薯";
+ITEM_POTATO_2_DESC              = "一顆老舊的馬鈴薯。";
+
+ITEM_POTATO_3_NAME              = "馬鈴薯";
+ITEM_POTATO_3_DESC              = "一塊老舊的切塊馬鈴薯。";
+
+ITEM_POTATO_4_NAME              = "馬鈴薯";
+ITEM_POTATO_4_DESC              = "一顆老舊的馬鈴薯。";
+
+ITEM_SALSIFY_1_NAME             = "婆羅門參";
+ITEM_SALSIFY_1_DESC             = "一根老舊的婆羅門參，一種根莖類蔬菜。";
+
+ITEM_SANDWICH_BRAIN_1_NAME      = "腦髓三明治";
+ITEM_SANDWICH_BRAIN_1_DESC      = "夾在兩片麵包中間的腦髓。光是想到要吃下它就令人反胃。";
+
+ITEM_TOAST_1_NAME               = "烤土司";
+ITEM_TOAST_1_DESC               = "一片放乾變硬的烤土司。";
+
+ITEM_TOAST_2_NAME               = "烤土司";
+ITEM_TOAST_2_DESC               = "半片放乾變硬的烤土司。";
+
+ITEM_LEVER_HANDLE_NAME			= "操縱桿把手";
+ITEM_LEVER_HANDLE_DESC			= "機械操縱桿的把手。";
+
+//-------------------------------------------------------------
+// Ammunition
+
+ITEM_REVOLVERROUND_NAME			= "左輪手槍子彈";
+ITEM_REVOLVERROUND_DESC			= "一顆左輪手槍子彈。彈殼似乎曾被重複裝填過。在緊要關頭或許能作為不錯的引誘聲響道具。";
+
+ITEM_REVOLVERROUNDSPENT_NAME	= "左輪手槍空彈殼";
+ITEM_REVOLVERROUNDSPENT_DESC	= "一個擊發過的左輪手槍空彈殼。在緊要關頭或許可臨時用來引開注意力。";
+
+ITEM_REVOLVERROUNDBOX_NAME		= "左輪手槍子彈盒";
+ITEM_REVOLVERROUNDBOX_DESC		= "一盒破舊受潮的常用左輪手槍子彈。正面依稀可辨認出警備隊核准印章的模糊痕跡。";
+
+ITEM_SHOTGUNSHELL_NAME			= "霰彈槍鹿彈";
+ITEM_SHOTGUNSHELL_DESC			= "用於霰彈槍的鹿彈。在緊要關頭或許可臨時用來引開注意力。";
+
+ITEM_SHOTGUNSHELLSPENT_NAME		= "霰彈槍空彈殼";
+ITEM_SHOTGUNSHELLSPENT_DESC		= "一個擊發過的空彈殼。在緊要關頭或許可臨時用來引開注意力。";
+
+ITEM_SHOTGUNSHELLBOX_NAME		= "霰彈槍彈藥盒";
+ITEM_SHOTGUNSHELLBOX_DESC		= "一盒破損老舊的霰彈槍彈藥。霰彈槍彈藥曾在此地區被明令禁止，但隨著這座城市逐漸轉向依賴獵物而非進口物資，這類彈藥又重回使用。";
+
+ITEM_FLAREGUN_BATON_NAME		= "鈍頭箭";
+ITEM_FLAREGUN_BATON_DESC		= "用於送葬者手槍的橡膠鈍頭彈藥。造成的傷害極低，但可從遠處觸發按鈕、擊碎窗戶與打碎燈泡。";
+
+ITEM_FLAREGUN_CHOKE_NAME		= "縮口窒息箭";
+ITEM_FLAREGUN_CHOKE_DESC		= "用於送葬者手槍的充氣彈藥。能撲滅火源並引發生物短暫咳嗽劇喘。";
+
+ITEM_FLAREGUN_INCENDIARY_NAME	= "燃燒箭";
+ITEM_FLAREGUN_INCENDIARY_DESC	= "用於送葬者手槍的易燃彈藥。可點燃物體並瞬間引爆易爆源。";
+
+ITEM_FLAREGUN_FLARE_NAME		= "照明箭";
+ITEM_FLAREGUN_FLARE_DESC		= "用於送葬者手槍的照明彈藥。可照亮目標區域一段時間。此效果可能會吸引附近的生物。";
+
+ITEM_FLAREGUN_SHOCK_NAME		= "閃光箭";
+ITEM_FLAREGUN_SHOCK_DESC		= "用於送葬者手槍的致盲彈藥。";
+
+ITEM_GUNPOWDER_NAME				= "火藥";
+ITEM_GUNPOWDER_DESC				= "";
+
+ITEM_HARPOON_NAME				= "魚叉 - 蓋吉道釘";
+ITEM_HARPOON_DESC				= "一枚鋒利的鐵路道釘，能嵌入特定表面。對造成腦部重創特別有效。";
+
+ITEM_HARPOON_BUNDLE_NAME		= "魚叉綑 - 蓋吉道釘";
+ITEM_HARPOON_BUNDLE_DESC		= "一綑道釘魚叉。";
+
+ITEM_HARPOON_ROPE_NAME			= "魚叉 - 繩索";
+ITEM_HARPOON_ROPE_DESC			= "能嵌入特定表面的魚叉。可連接繩索。";
+
+ITEM_HARPOON_ROPE_BUNDLE_NAME	= "魚叉綑 - 繩索";
+ITEM_HARPOON_ROPE_BUNDLE_DESC	= "一綑魚叉。";
+
+ITEM_CORPSE_RAT_NAME = "老鼠";
+ITEM_CORPSE_RAT_DESC = "一隻死老鼠。氣味難聞得要命。";
+
+ITEM_CORPSE_RAT_BLACK_NAME = "黑鼠";
+ITEM_CORPSE_RAT_BLACK_DESC = "一隻死黑鼠。氣味難聞得要命。";
+
+ITEM_CORPSE_RAT_GRAY_1_NAME = "淺灰鼠";
+ITEM_CORPSE_RAT_GRAY_1_DESC = "一隻死淺灰鼠。氣味難聞得要命。";
+
+ITEM_CORPSE_RAT_GRAY_2_NAME = "深灰鼠";
+ITEM_CORPSE_RAT_GRAY_2_DESC = "一隻死深灰鼠。氣味難聞得要命。";
+
+ITEM_CORPSE_RAT_INFECTED_NAME = "感染鼠";
+ITEM_CORPSE_RAT_INFECTED_DESC = "一隻滲出瘟疫穢液的死老鼠。";
+
+ITEM_GIBLET_CITIZEN_MAN_HEAD_NAME	= "市民男性的頭部";
+ITEM_GIBLET_CITIZEN_MAN_HEAD_DESC	= "（尚未研究）";
+
+ITEM_GOATMAN_HORN_LEFT_NAME			= "山羊怪犄角（左）";
+ITEM_GOATMAN_HORN_LEFT_DESC			= "（尚未研究）";
+
+ITEM_GOATMAN_HORN_RIGHT_NAME		= "山羊怪犄角（右）";
+ITEM_GOATMAN_HORN_RIGHT_DESC		= "（尚未研究）";
+
+//-------------------------------------------------------------
+// Weapons
+
+ITEM_CANESWORD_NAME					= "手杖劍";
+ITEM_CANESWORD_DESC					= "一把耐用的手杖劍，配有象牙握柄與鍍銀劍刃。對毫無防備且未著護甲的敵人進行蓄力突刺可造成致命傷害。";
+
+ITEM_BONESAW_NAME					= "截骨鋸";
+ITEM_BONESAW_DESC					= "一把手術級鋼製截骨鋸，配有獸角與木製握柄。可用於將大型樣本切割成便於攜帶的採樣部位以利運送。";
+
+ITEM_REVOLVER_NAME					= "左輪手槍";
+ITEM_REVOLVER_DESC					= "六發裝折開式左輪手槍。鋼鑄製造，使用此城市當地的特規子彈。";
+
+ITEM_SHOTGUN_NAME					= "霰彈槍";
+ITEM_SHOTGUN_DESC					= "一把折疊式泵動霰彈槍。深受捕獵者青睞，他們渴望在越過城塞壁壘出獵時擁有一把便於攜帶的近戰武器。";
+
+ITEM_BEARTRAP_NAME					= "捕獸夾";
+ITEM_BEARTRAP_DESC					= "一種踩踏式陷阱，能夾住受害者的腿部，造成立即傷害、無法動彈與大出血。當地獵人因其結構簡單可靠而對其情有獨鍾。";
+
+ITEM_FLAREGUN_NAME					= "送葬者手槍";
+ITEM_FLAREGUN_DESC					= "一把改裝的消音單發手槍。槍膛專為特殊箭彈設計。握柄上刻有「送葬者」之名。";
+
+ITEM_FLASHBOMB_NAME					= "閃光彈";
+ITEM_FLASHBOMB_DESC					= "一種投擲型炸彈，能散發出致盲的強烈閃光，使周圍生物無法視物或攻擊。這是警備隊為平息暴動與抗議而新引進的裝備。";
+
+ITEM_CHOKEBOMB_NAME					= "窒息煙霧彈";
+ITEM_CHOKEBOMB_DESC					= "一種投擲型炸彈，能釋放出一團有毒濃煙，可擊暈生物並撲滅火焰。這是警備隊為平息暴動與抗議而新引進的裝備。";
+
+ITEM_HARPOONGUN_NAME			    = "魚叉槍";
+ITEM_HARPOONGUN_DESC			    = "一把由新穎蒸汽排氣系統驅動的魚叉槍。雖然此武器通常用於捕魚，但亦可射向特定表面以架設可延展的繩索。";
+
+// Tools
+ITEM_BUTTON_PRESSER_NAME			= "按鈕蓋";
+ITEM_BUTTON_PRESSER_DESC			= "按鈕開關的保護蓋。可用於修復特定裝置。";
+
+ITEM_VALVE_WHEEL_NAME				= "手動閥門轉輪";
+ITEM_VALVE_WHEEL_DESC				= "用於手動操作各類裝置的手動閥門。可安裝至合適的閥座上。";
+
+ITEM_CRANK_HANDLE_NAME				= "曲柄手把";
+ITEM_CRANK_HANDLE_DESC				= "用於手動操作各類裝置的曲柄手把。可安裝至合適的曲柄插槽中。";
+
+ITEM_CRANK_HANDLE_GOLD_NAME			= "黃金曲柄手把";
+ITEM_CRANK_HANDLE_GOLD_DESC			= "范德米爾先生所擁有的華麗曲柄手把。用來開啟這座城市陰森可怖之底層世界的精緻鑰匙。";
+
+ITEM_LEVER_PULLDOWN_HANDLE_NAME		= "拉桿";
+ITEM_LEVER_PULLDOWN_HANDLE_DESC		= "用於手動操作各類裝置的拉桿。可安裝至合適的槓桿機構中。";
+
+ITEM_CANNONBALL_NAME				= "加農砲彈";
+ITEM_CANNONBALL_DESC				= "可裝入加農砲的砲彈。表面覆蓋著一層薄薄的鐵鏽。";
+
+ITEM_CANNON_FUSE_NAME				= "加農砲引信";
+ITEM_CANNON_FUSE_DESC				= "用於加農砲的引信線。";
+
+ITEM_POWDERFLASK_NAME				= "牛角火藥罐";
+ITEM_POWDERFLASK_DESC				= "以獸角製成的小型容器。便於將火藥倒入滑膛槍與加農砲等老式前膛裝填武器中。";
+
+//-------------------------------------------------------------
+// Keys
+
+KEY_NONE_NAME						= "無";
+KEY_NONE_DESC						= "未找到任何鑰匙。";
+
+KEY_TESTKEY1_NAME					= "測試鑰匙";
+KEY_TESTKEY1_DESC					= "第一把測試鑰匙。";
+
+KEY_TESTKEY2_NAME					= "第二把測試鑰匙";
+KEY_TESTKEY2_DESC					= "第二把測試鑰匙。";
+
+KEY_EMBLEM_CROW_NAME				= "烏鴉徽章";
+KEY_EMBLEM_CROW_DESC				= "鐫刻有烏鴉圖案的徽章。";
+
+KEY_EMBLEM_RAT_NAME					= "老鼠徽章";
+KEY_EMBLEM_RAT_DESC					= "鐫刻有老鼠圖案的徽章。";
+
+KEY_SEAL_UNDERPORT_NAME				= "底層港口徽印";
+KEY_SEAL_UNDERPORT_DESC				= "漁民工會的徽印，該工會沿著懸崖峭壁建立了首批港口。這些開拓者曾是游牧水手，他們冒著深淵之海的恐怖危險尋覓富饒的土地。";
+
+KEY_DEMO_SAFEHOUSE_NAME				= "安全屋鑰匙";
+KEY_DEMO_SAFEHOUSE_DESC				= "用於安全屋前門。";
+
+KEY_DEMO_COURTYARD_NAME				= "看守人中庭鑰匙";
+KEY_DEMO_COURTYARD_DESC				= "用於監獄入口旁的門。";
+
+KEY_DEMO_GUARDHOUSE_NAME			= "警衛室鑰匙";
+KEY_DEMO_GUARDHOUSE_DESC			= "用於集市大門旁的警衛室。";
+
+KEY_FISHERY_SUPPLYROOM_NAME			= "漁業儲藏室鑰匙";
+KEY_FISHERY_SUPPLYROOM_DESC			= "克魯普先生漁業工廠儲藏室的鑰匙。";
+
+KEY_FISHERY_MANAGER_NAME			= "漁業主管鑰匙";
+KEY_FISHERY_MANAGER_DESC			= "克魯普先生漁業工廠經理的鑰匙。";
+
+KEY_FISHERY_ROOFTOP_NAME			= "漁業屋頂鑰匙";
+KEY_FISHERY_ROOFTOP_DESC			= "克魯普先生漁業工廠屋頂的鑰匙。";
+
+KEY_FISHERY_POWERROOM_NAME			= "漁業配電室鑰匙";
+KEY_FISHERY_POWERROOM_DESC			= "克魯普先生漁業工廠配電室的鑰匙。";
+
+KEY_FISHERY_POWERGENERATOR_NAME		= "漁業發電機鑰匙";
+KEY_FISHERY_POWERGENERATOR_DESC		= "漁業工廠發電機的鑰匙。";
+
+KEY_FISHERY_WATCHTOWER_NAME			= "漁業瞭望塔鑰匙";
+KEY_FISHERY_WATCHTOWER_DESC			= "克魯普先生漁業工廠瞭望塔的鑰匙。";
+
+KEY_FISHERY_CARRIAGE_BACKDOOR_NAME	= "漁業馬車站後門鑰匙";
+KEY_FISHERY_CARRIAGE_BACKDOOR_DESC	= "漁業馬車站後門的鑰匙。";
+
+KEY_FISHERY_CARRIAGE_BASEMENT_NAME	= "漁業馬車站地下室鑰匙";
+KEY_FISHERY_CARRIAGE_BASEMENT_DESC	= "克魯普先生漁業工廠馬車站地下車庫的鑰匙。";
+
+KEY_COAST_FISHERY_CABIN_NAME		= "漁業小屋鑰匙";
+KEY_COAST_FISHERY_CABIN_DESC		= "俯瞰克魯普先生漁業工廠之小屋的鑰匙。";
+
+KEY_FISHERY_CABIN_SHORTCUT_NAME		= "漁業小屋隧道鑰匙";
+KEY_FISHERY_CABIN_SHORTCUT_DESC		= "俯瞰克魯普先生漁業工廠小屋下方隧道的鑰匙。";
+
+KEY_CAVES_POWERGENERATOR_NAME		= "礦坑發電機鑰匙";
+KEY_CAVES_POWERGENERATOR_DESC		= "海岸礦坑發電機房的鑰匙。";
+
+KEY_CAVES_STORAGE_NAME				= "礦坑儲藏室鑰匙";
+KEY_CAVES_STORAGE_DESC				= "海岸礦坑儲藏室的鑰匙。金屬表面隱約滲著血腥味。";
+
+KEY_COAST_HOUSE_1_NAME				= "海岸荒廢房屋鑰匙";
+KEY_COAST_HOUSE_1_DESC				= "沿海道路旁一座荒廢房屋的鑰匙。";
+
+KEY_PADLOCK_COAST_CLIFF_WALL_NAME	= "燈塔小徑掛鎖門鑰匙";
+KEY_PADLOCK_COAST_CLIFF_WALL_DESC	= "通往燈塔小徑上掛鎖門牆的鑰匙。";
+
+KEY_COAST_TAVERN_GUNCASE_NAME		= "屠山羊槍櫃鑰匙";
+KEY_COAST_TAVERN_GUNCASE_DESC		= "屠山羊酒館壁掛槍櫃的鑰匙。";
+
+KEY_COAST_TAVERN_BASEMENT_NAME		= "屠山羊地下室鑰匙";
+KEY_COAST_TAVERN_BASEMENT_DESC		= "屠山羊酒館地下室的鑰匙。";
+
+KEY_COAST_TAVERN_ROOMS_NAME			= "屠山羊客房鑰匙";
+KEY_COAST_TAVERN_ROOMS_DESC			= "屠山羊酒館客房的鑰匙。";
+
+KEY_COAST_GUARDTOWER_NAME			= "海岸瞭望塔鑰匙";
+KEY_COAST_GUARDTOWER_DESC			= "城門外海岸瞭望塔的鑰匙。";
+
+KEY_COAST_GATEHOUSE_STORAGE_NAME	= "城門警衛室儲藏室鑰匙";
+KEY_COAST_GATEHOUSE_STORAGE_DESC	= "城門警衛室儲藏室的鑰匙。";
+
+KEY_MARKET_SHACK_1_NAME				= "漁屋門鑰匙";
+KEY_MARKET_SHACK_1_DESC				= "集市區一間上鎖漁屋大門的鑰匙。";
+
+KEY_MARKET_GUNSHOP_FRONTDOOR_NAME		= "槍店前門鑰匙";
+KEY_MARKET_GUNSHOP_FRONTDOOR_DESC		= "集市區槍店前門的鑰匙。";
+
+KEY_MARKET_GUNSHOP_CASHIER_NAME			= "槍店收銀台鑰匙";
+KEY_MARKET_GUNSHOP_CASHIER_DESC			= "集市區槍店收銀台的鑰匙。";
+
+KEY_MARKET_GUNSHOP_DISPLAYCASE_NAME		= "槍店展示櫃鑰匙";
+KEY_MARKET_GUNSHOP_DISPLAYCASE_DESC		= "集市區槍店展示櫃的鑰匙。";
+
+KEY_MARKET_DOCK_POWERSTATION_NAME		= "集市變電所鑰匙";
+KEY_MARKET_DOCK_POWERSTATION_DESC		= "集市區碼頭附近變電所的鑰匙。";
+
+KEY_MARKET_BARBERSHOP_BASEMENT_NAME		= "理髮店地下室鑰匙";
+KEY_MARKET_BARBERSHOP_BASEMENT_DESC		= "集市區理髮店地下室的鑰匙。";
+
+KEY_MARKET_MANOR_BACKDOOR_1_NAME		= "卡爾勳爵宅邸後門鑰匙";
+KEY_MARKET_MANOR_BACKDOOR_1_DESC		= "集市區一座莊園宅邸後門的鑰匙。";
+
+KEY_MARKET_RESTROOM_FRONTDOOR_NAME		= "集市公廁鑰匙";
+KEY_MARKET_RESTROOM_FRONTDOOR_DESC		= "集市區公共廁所的鑰匙。臭氣沖天。";
+
+KEY_MARKET_MANOR_2_FRONTDOOR_NAME		= "馬溫勳爵宅邸鑰匙";
+KEY_MARKET_MANOR_2_FRONTDOOR_DESC		= "集市區一座莊園宅邸前門的鑰匙。鑰匙柄部刻有「馬溫勳爵」之名。";
+
+KEY_MARKET_MANOR_3_FRONTDOOR_NAME		= "卡爾勳爵宅邸前門鑰匙";
+KEY_MARKET_MANOR_3_FRONTDOOR_DESC		= "集市區一座莊園宅邸前門的鑰匙。鑰匙柄部刻有「卡爾勳爵」之名。";
+
+KEY_MARKET_DRUNKEN_WATERFOWL_NAME       = "醉水禽酒館鑰匙";
+KEY_MARKET_DRUNKEN_WATERFOWL_DESC       = "集市區醉水禽酒館的鑰匙。";
+
+KEY_UNDERPORT_ENTRANCE_NAME				= "底層港口入口大門鑰匙";
+KEY_UNDERPORT_ENTRANCE_DESC				= "集市區通往底層港口入口大門的鑰匙。";
+
+KEY_UNDERPORT_PUMPSTATION_MAIN_NAME		= "底層港口抽水站鑰匙";
+KEY_UNDERPORT_PUMPSTATION_MAIN_DESC		= "底層港口公共泵業抽水站的鑰匙。";
+
+KEY_UNDERPORT_WAREHOUSE_1F_NAME			= "范德米爾倉庫一樓鑰匙";
+KEY_UNDERPORT_WAREHOUSE_1F_DESC			= "底層港口范德米爾倉庫一樓的鑰匙。";
+
+KEY_UNDERPORT_WAREHOUSE_ARMORY_NAME		= "范德米爾軍械庫鑰匙";
+KEY_UNDERPORT_WAREHOUSE_ARMORY_DESC		= "底層港口范德米爾倉庫武器與爆炸物儲藏室的鑰匙。";
+
+KEY_UNDERPORT_WAREHOUSE_GATE_NAME		= "范德米爾鐵閘門鑰匙";
+KEY_UNDERPORT_WAREHOUSE_GATE_DESC		= "底層港口范德米爾倉庫側門的鑰匙。";
+
+KEY_UNDERPORT_SEWER_B_BREAKROOM_NAME	= "下水道B區休息室鑰匙";
+KEY_UNDERPORT_SEWER_B_BREAKROOM_DESC	= "底層港口下水道B區休息室的鑰匙。";
+
+KEY_UNDERPORT_TRAM_CHEST_NAME			= "路軌電車卸貨室鑰匙";
+KEY_UNDERPORT_TRAM_CHEST_DESC			= "底層港口路軌電車卸貨室內箱子的鑰匙。";
+
+KEY_UNDERPORT_CASTLE_GATE_NAME			= "城堡大門鑰匙";
+KEY_UNDERPORT_CASTLE_GATE_DESC			= "底層港口城堡大門的鑰匙。";
+
+KEY_UNDERPORT_SAFEROOM_CELLAR_NAME      = "安全室地窖鑰匙";
+KEY_UNDERPORT_SAFEROOM_CELLAR_DESC      = "底層港口一間安全室下方地窖的鑰匙。";
+
+KEY_HIVE_SHANTYTOWN_NAME                = "棚戶區鑰匙";
+KEY_HIVE_SHANTYTOWN_DESC                = "蜂巢區棚戶區鐵門的鑰匙。";
+
+KEY_HIVE_ENGINEERING_NAME				= "工程區通行鑰匙";
+KEY_HIVE_ENGINEERING_DESC				= "蜂巢區工程出入區域的鑰匙。";
+
+KEY_HIVE_SUPERVISOR_NAME                = "下水道主管鑰匙";
+KEY_HIVE_SUPERVISOR_DESC                = "蜂巢區水閘控制室與主管置物櫃的鑰匙。";
+
+// Currency
+CURRENCY_GOLD_NAME					= "黃金";
+CURRENCY_GOLD_DESC					= "閃閃發光的錢幣與值錢的小玩意。";
+
+// Treasure
+ITEM_BROOCH_1_NAME					= "紅寶石胸針";
+ITEM_BROOCH_1_DESC					= "一枚鑲有紅寶石的胸針。若遇到合適的買家能賣個好價錢。";
+
+ITEM_GEM_WHITE_SMALL_NAME			= "白色寶石（小）";
+ITEM_GEM_WHITE_SMALL_DESC			= "一顆小巧閃亮的白色寶石。可以出售。";
+
+ITEM_GEM_WHITE_LARGE_NAME			= "白色寶石（大）";
+ITEM_GEM_WHITE_LARGE_DESC			= "一顆碩大閃亮的白色寶石。可以出售。";
+
+ITEM_GEM_BLOOD_TINY_NAME			= "血石（微型）";
+ITEM_GEM_BLOOD_TINY_DESC			= "一顆極小的血紋寶石，彷彿凝結了鮮血。儘管尺寸微小，價值卻頗為可觀。";
+
+ITEM_GEM_BLOOD_SMALL_NAME			= "血石（小）";
+ITEM_GEM_BLOOD_SMALL_DESC			= "一顆小巧的血紋寶石，彷彿凝結了鮮血。在這座城市中相當罕見且價值不菲。";
+
+ITEM_GEM_EMERALD_LARGE_NAME			= "祖母綠寶石（大）";
+ITEM_GEM_EMERALD_LARGE_DESC			= "一顆碩大晶瑩的祖母綠寶石。可以出售。傳聞祖母綠是狂人之石，會引誘人擁抱混亂與狂怒。";
+
+ITEM_HORN_ULMAR_NAME				= "烏爾瑪之角";
+ITEM_HORN_ULMAR_DESC				= "來自古老王國的珍貴象牙號角。據說這些號角曾能響徹整個疆界，但其力量早已消逝。";
+
+ITEM_RING_EMERALD_NAME				= "祖母綠戒指";
+ITEM_RING_EMERALD_DESC				= "鑲有一顆祖母綠寶石的戒指。傳聞祖母綠是狂人之石，會引誘人擁抱混亂與狂怒。";
+
+ITEM_CHALICE_1_GOLD_NAME			= "黃金聖杯";
+ITEM_CHALICE_1_GOLD_DESC			= "一座華麗的黃金高腳聖杯，裝飾著精美雕花滾邊，並鑲嵌著血紅寶石。";
+
+ITEM_POCKETWATCH_1_GOLD_NAME		= "黃金懷錶";
+ITEM_POCKETWATCH_1_GOLD_DESC		= "一塊由城中最頂尖鐘錶匠組裝而成的黃金懷錶。";
+
+ITEM_CANOPIC_JAR_CROW_NAME			= "卡諾匹斯罐（烏鴉）";
+ITEM_CANOPIC_JAR_CROW_DESC			= "用於為來世保存內臟器官的古老卡諾匹斯罐。罐蓋為烏鴉頭部造型，雙目銳利，生有令人膽寒的尖喙，象徵著死亡。";
+
+ITEM_CANOPIC_JAR_GOAT_NAME			= "卡諾匹斯罐（山羊）";
+ITEM_CANOPIC_JAR_GOAT_DESC			= "用於為來世保存內臟器官的古老卡諾匹斯罐。熟練的工匠將石製罐蓋雕刻成山羊形狀，作為強健生殖力的象徵。";
+
+ITEM_CANOPIC_JAR_LION_NAME			= "卡諾匹斯罐（雄獅）";
+ITEM_CANOPIC_JAR_LION_DESC			= "用於為來世保存內臟器官的古老卡諾匹斯罐。石製罐蓋呈雄獅造型，彰顯出封存於內之器官主人的力量與勇氣。";
+
+ITEM_COIN_ANCIENT_NAME              = "古錢幣";
+ITEM_COIN_ANCIENT_DESC              = "一枚由青銅錘打而成的古老錢幣。正面鑄有一名未知男子的浮雕，背面則是一個奇異的無面身影與無法辨識的符文。";
+
+//-------------------------------------------------------------
+// Junk
+
+ITEM_BOTTLE_NAME				= "玻璃瓶";
+ITEM_BOTTLE_DESC				= "一個空玻璃酒瓶，能發出巨大的聲響以吸引注意力。正面貼著灰燼釀酒廠褪色的標籤。";
+
+ITEM_BOTTLE_FLASK_NAME			= "空扁酒壺";
+ITEM_BOTTLE_FLASK_DESC			= "一個空的玻璃扁酒壺，投擲時極易碎裂。";
+
+ITEM_BOTTLE_WINE_NAME			= "葡萄酒瓶";
+ITEM_BOTTLE_WINE_DESC			= "一個空的葡萄酒瓶，投擲時極易碎裂。標籤已被撕毀，無法得知你是否曾喜愛過瓶中裝的佳釀。";
+
+ITEM_BOTTLE_WHISKEY_NAME		= "威士忌酒瓶";
+ITEM_BOTTLE_WHISKEY_DESC		= "一個空的威士忌酒瓶，投擲時極易碎裂。";
+
+ITEM_BOTTLE_MEDICAL_NAME		= "藥瓶";
+ITEM_BOTTLE_MEDICAL_DESC		= "一個空的玻璃藥瓶，投擲時極易碎裂。";
+
+ITEM_CAN_FISH_NAME				= "魚罐頭";
+ITEM_CAN_FISH_DESC				= "貼有「克魯普漁業」標籤貼紙的罐頭。包裝紙散發著一股鹹腥作嘔的氣味。";
+
+ITEM_CAN_FISH_EMPTY_NAME		= "魚罐頭（空）";
+ITEM_CAN_FISH_EMPTY_DESC		= "貼有「克魯普漁業」標籤貼紙的空罐頭。罐頭內部沾滿了黏稠的殘留物。";
+
+ITEM_CAN_BEANS_NAME				= "豆子罐頭";
+ITEM_CAN_BEANS_DESC				= "貼有「史密斯醫生牌豬肉燉豆」標籤貼紙的罐頭。散發出一股令人懷念的熟悉香氣。";
+
+ITEM_CAN_BEANS_EMPTY_NAME		= "豆子罐頭（空）";
+ITEM_CAN_BEANS_EMPTY_DESC		= "貼有「史密斯醫生牌豬肉燉豆」標籤貼紙的空罐頭。裡面唯一剩下的只有一無所有的痛苦。心痛如絞。";
+
+ITEM_RIFLE_BROKEN_NAME			= "獵人步槍";
+ITEM_RIFLE_BROKEN_DESC			= "一把粗製濫造的拼裝獵槍。其握把專為獵人畸形的手部比例打造，常人根本無法操作。";
+
+ITEM_BRICK_1_NAME               = "磚塊";
+ITEM_BRICK_1_DESC               = "從牆上崩落的磚塊。雖然造不成什麼傷害，但絕對能吸引別人的注意。";
+
+ITEM_BOOT_1_LEFT_NAME           = "長靴（左）";
+ITEM_BOOT_1_LEFT_DESC           = "一隻破舊磨損的左腳皮靴。散發著濃烈的腳汗臭味與霉味。";
+
+ITEM_BOOT_1_RIGHT_NAME          = "長靴（右）";
+ITEM_BOOT_1_RIGHT_DESC          = "一隻破舊磨損的右腳皮靴。散發著濃烈的腳汗臭味與霉味。";
+
+ITEM_TINCAN_1_NAME              = "鐵罐";
+ITEM_TINCAN_1_DESC              = "一個沒有標籤的馬口鐵罐。從氣味上無法辨斷以前裝過什麼。";
+
+ITEM_TINCAN_2_NAME              = "鐵罐";
+ITEM_TINCAN_2_DESC              = "一個沒有標籤的馬口鐵罐。從氣味上無法辨斷以前裝過什麼。";
+
+ITEM_TORCH_NAME					= "火把";
+ITEM_TORCH_DESC					= "一把熄滅燒焦的木製火把。數百年來，獵人們始終依賴火把，無論是在夜間狩獵時照明，還是用來威嚇那些畏懼烈焰的生物。";
+
+//-------------------------------------------------------------
+// Research
+
+ITEM_SERUM_FAILED_NAME				= "失敗血清";
+ITEM_SERUM_FAILED_DESC				= "實驗失敗產生的蒸餾廢液。";
+
+ITEM_SERUM_CROWMAN_NAME				= "鴉人血清";
+ITEM_SERUM_CROWMAN_DESC				= "提煉自鴉獸（Corvus Orthograde）物種的血清。注射後可暫時獲得該變異的效果。";
+
+ITEM_SERUM_CROWKING_NAME			= "鴉族長老血清";
+ITEM_SERUM_CROWKING_DESC			= "提煉自鴉族長老物種的血清。";
+
+ITEM_SERUM_FISHDOG_NAME				= "水生犬血清";
+ITEM_SERUM_FISHDOG_DESC				= "提煉自水生犬（Canis Aquaticus）物種的血清。";
+
+ITEM_SERUM_BATBARBER_NAME			= "蝠獸血清";
+ITEM_SERUM_BATBARBER_DESC			= "提煉自蝠獸（Vesper Sapiens）物種的血清。注射後可暫時獲得該變異的效果。";
+
+ITEM_SERUM_GOATMAN_NAME				= "山羊怪血清";
+ITEM_SERUM_GOATMAN_DESC				= "提煉自羊人（Homo Caprae）物種的血清。注射後可暫時獲得該變異的效果。";
+
+ITEM_SERUM_RAT_NAME					= "老鼠血清";
+ITEM_SERUM_RAT_DESC					= "提煉自老鼠物種的血清。";
+
+ITEM_SERUM_HUNTSMAN_NAME			= "獵手血清";
+ITEM_SERUM_HUNTSMAN_DESC			= "提煉自獵手（Homo Venari）物種的血清。";
+
+ITEM_RESEARCH_JAR_1_EYEBALLS_NAME	= "眼球樣本";
+ITEM_RESEARCH_JAR_1_EYEBALLS_DESC	= "一罐裝有多顆死死凝視眼球的玻璃罐，眼球漂浮在黏稠滑膩的液體中。";
+
+ITEM_RESEARCH_JAR_2_MOUTH_NAME		= "吞嚥者口器";
+ITEM_RESEARCH_JAR_2_MOUTH_DESC		= "一罐泡在濃稠液體中腫脹的吞嚥者口器。";
+
+ITEM_RESEARCH_JAR_3_TEETH_NAME		= "齒凝膠";
+ITEM_RESEARCH_JAR_3_TEETH_DESC		= "一罐浸泡在凝固黏液中的堅硬琺瑯質牙齒。";
+
+ITEM_RESEARCH_JAR_4_RATTAILS_NAME	= "鼠尾標本罐";
+ITEM_RESEARCH_JAR_4_RATTAILS_DESC	= "一團由相互纏繞的鼠尾形成的血肉腫塊。據傳取自曾於某貴族莊園夾層中統領鼠群的巨大鼠王。";
+
+ITEM_RESEARCH_JAR_5_HAND_NAME		= "手掌聖髑罐";
+ITEM_RESEARCH_JAR_5_HAND_DESC		= "一罐浸在污泥中乾癟起皺的手掌。傳聞是由執行女王律法處決死刑犯的劊子手所收集。";
+
+ITEM_RESEARCH_JAR_6_LEECHES_NAME	= "水蛭罐";
+ITEM_RESEARCH_JAR_6_LEECHES_DESC	= "一罐浸在微鹹水中的吸飽血水蛭。任何有自尊的行醫者都會隨身攜帶以進行常規放血。";
+
+ITEM_RESEARCH_JAR_7_TENTACLES_NAME	= "觸手罐";
+ITEM_RESEARCH_JAR_7_TENTACLES_DESC	= "一罐浸在黏稠黏液中的觸手玻璃罐，取自深海生物以提煉其墨汁與油脂。";
+
+ITEM_RESEARCH_JAR_8_EARS_NAME        = "採集的耳朵";
+ITEM_RESEARCH_JAR_8_EARS_DESC        = "自各類物種割取、形狀與尺寸各異的耳朵，在醫術中各有獨特的用途。";
+
+ITEM_RESEARCH_JAR_9_SPINE_NAME      = "脊椎切段";
+ITEM_RESEARCH_JAR_9_SPINE_DESC      = "罐中保存的一截脊椎，據稱已有四百多年歷史，但外觀看起來卻如同不超過五十歲。";
+
+ITEM_RESEARCH_JAR_10_WORMS_NAME		= "蟲叢";
+ITEM_RESEARCH_JAR_10_WORMS_DESC		= "一團在黏液中蠕動的蠕蟲。這些蠕蟲是屍體絕佳的天然清理者。";
+
+ITEM_RESEARCH_JAR_11_TONGUES_NAME	= "舌頭金屬罐";
+ITEM_RESEARCH_JAR_11_TONGUES_DESC	= "一個裝有動物舌頭的玻璃罐，被認為具有消炎特性。";
+
+ITEM_RESEARCH_JAR_12_SPIDER_NAME    = "蜘蛛剝製標本";
+ITEM_RESEARCH_JAR_12_SPIDER_DESC	= "裝有來自遠東、極其巨大且劇毒之蜘蛛剝製殘骸的罐子。價值非常昂貴。";
+
+ITEM_RESEARCH_JAR_13_DOLL_NAME		= "保存的人偶";
+ITEM_RESEARCH_JAR_13_DOLL_DESC		= "此罐中裝有一個玩偶，據說附著了一位在短暫一生中受盡冤屈的年輕女子的殘存靈魂。";
+
+ITEM_RESEARCH_JAR_14_BRAIN_NAME		= "腫脹的腦髓";
+ITEM_RESEARCH_JAR_14_BRAIN_DESC		= "精心保存的古怪狂人腦髓，於屍檢時取出以供研究。";
+
+ITEM_RESEARCH_JAR_15_HEAD_NAME		= "煉金術士面容";
+ITEM_RESEARCH_JAR_15_HEAD_DESC		= "一名因聲稱發現長生不老秘密而被處決的煉金術士之斷頭醃製標本。";
+
+ITEM_RESEARCH_JAR_16_CLAW_NAME		= "水晶利爪";
+ITEM_RESEARCH_JAR_16_CLAW_DESC		= "現已滅絕的巨蜥利爪，封存在濃稠的防腐溶液中。";
+
+ITEM_RESEARCH_JAR_17_FROG_NAME		= "催眠蟾蜍";
+ITEM_RESEARCH_JAR_17_FROG_DESC		= "一隻來自亞馬遜的巨型海蟾蜍（Rhinella marina），以能分泌引發催眠與致幻體驗的分泌物而聞名。";
+
+ITEM_RESEARCH_JAR_18_UNKNOWN_NAME   = "未知標本";
+ITEM_RESEARCH_JAR_18_UNKNOWN_DESC   = "一份無法辨識與歸類的物質樣本。或許毫無用處，但誰說得準呢。";
+
+ITEM_RESEARCH_JAR_19_HEART_NAME		= "充血的心臟";
+ITEM_RESEARCH_JAR_19_HEART_DESC		= "一個未貼標籤的罐子，裡面裝有一顆來源不明的巨大心臟。仔細觀察可以察覺到極其微弱的心跳。";
+
+ITEM_RESEARCH_JAR_20_TWINS_NAME      = "連體雙胞胎遺體";
+ITEM_RESEARCH_JAR_20_TWINS_DESC      = "晚期胚胎階段的連體雙胞胎防腐遺體，保存用於極端變異研究。你無法確認其是否源自人類。";
+
+ITEM_RESEARCH_JAR_GENERIC_NAME		= "黏稠液體罐";
+ITEM_RESEARCH_JAR_GENERIC_DESC		= "一罐黏稠的液體。它曾經裝有某種更具重要意義的物質。";
+
+//-------------------------------------------------------------
+// Giblets - Huntsman
+
+ITEM_HUNTSMAN_HEAD_NAME				= "獵人的頭部";
+ITEM_HUNTSMAN_HEAD_DESC				= "死去的獵人的頭部。";
+ITEM_HUNTSMAN_TORSO_NAME			= "獵人的軀幹";
+ITEM_HUNTSMAN_TORSO_DESC			= "死去的獵人的軀幹。";
+ITEM_HUNTSMAN_PELVIS_NAME			= "獵人的骨盆";
+ITEM_HUNTSMAN_PELVIS_DESC			= "死去的獵人的骨盆。";
+ITEM_HUNTSMAN_ARM_LEFT_NAME			= "獵人的左臂";
+ITEM_HUNTSMAN_ARM_LEFT_DESC			= "死去的獵人的左臂。";
+ITEM_HUNTSMAN_ARM_RIGHT_NAME		= "獵人的右臂";
+ITEM_HUNTSMAN_ARM_RIGHT_DESC		= "死去的獵人的右臂。";
+ITEM_HUNTSMAN_LEG_LEFT_NAME			= "獵人的左腿";
+ITEM_HUNTSMAN_LEG_LEFT_DESC			= "死去的獵人的左腿。";
+ITEM_HUNTSMAN_LEG_RIGHT_NAME		= "獵人的右腿";
+ITEM_HUNTSMAN_LEG_RIGHT_DESC		= "死去的獵人的右腿。";
+
+//-------------------------------------------------------------
+// Giblets - Woodsman
+
+ITEM_WOODSMAN_HEAD_NAME				= "樵夫的頭部";
+ITEM_WOODSMAN_HEAD_DESC				= "死去的樵夫的頭部。";
+ITEM_WOODSMAN_TORSO_NAME			= "樵夫的軀幹";
+ITEM_WOODSMAN_TORSO_DESC			= "死去的樵夫的軀幹。";
+ITEM_WOODSMAN_PELVIS_NAME			= "樵夫的骨盆";
+ITEM_WOODSMAN_PELVIS_DESC			= "死去的樵夫的骨盆。";
+ITEM_WOODSMAN_ARM_LEFT_NAME			= "樵夫的左臂";
+ITEM_WOODSMAN_ARM_LEFT_DESC			= "死去的樵夫的左臂。";
+ITEM_WOODSMAN_ARM_RIGHT_NAME		= "樵夫的右臂";
+ITEM_WOODSMAN_ARM_RIGHT_DESC		= "死去的樵夫的右臂。";
+ITEM_WOODSMAN_LEG_LEFT_NAME			= "樵夫的左腿";
+ITEM_WOODSMAN_LEG_LEFT_DESC			= "死去的樵夫的左腿。";
+ITEM_WOODSMAN_LEG_RIGHT_NAME		= "樵夫的右腿";
+ITEM_WOODSMAN_LEG_RIGHT_DESC		= "死去的樵夫的右腿。";
+
+//-------------------------------------------------------------
+// Giblets - Crowman
+
+ITEM_CROWMAN_HEAD_NAME				= "鴉人的頭部";
+ITEM_CROWMAN_HEAD_DESC				= "死去的鴉人的頭部。";
+ITEM_CROWMAN_TORSO_NAME				= "鴉人的軀幹";
+ITEM_CROWMAN_TORSO_DESC				= "死去的鴉人的軀幹。";
+ITEM_CROWMAN_PELVIS_NAME			= "鴉人的骨盆";
+ITEM_CROWMAN_PELVIS_DESC			= "死去的鴉人的骨盆。";
+ITEM_CROWMAN_ARM_LEFT_NAME			= "鴉人的左臂";
+ITEM_CROWMAN_ARM_LEFT_DESC			= "死去的鴉人的左臂。";
+ITEM_CROWMAN_UPPERARM_RIGHT_NAME	= "鴉人的右上臂";
+ITEM_CROWMAN_UPPERARM_RIGHT_DESC	= "死去的鴉人的右上臂。";
+ITEM_CROWMAN_LEG_LEFT_NAME			= "鴉人的左腿";
+ITEM_CROWMAN_LEG_LEFT_DESC			= "死去的鴉人的左腿。";
+ITEM_CROWMAN_FOOT_RIGHT_NAME		= "鴉人的右腳";
+ITEM_CROWMAN_FOOT_RIGHT_DESC		= "死去的鴉人的右腳。";
+ITEM_CROWMAN_HAND_RIGHT_NAME		= "鴉人的右手";
+ITEM_CROWMAN_HAND_RIGHT_DESC		= "死去的鴉人的右手。";
+
+//-------------------------------------------------------------
+// Giblets - Crowking
+
+ITEM_CROWKING_HEAD_NAME				= "鴉族長老的頭部";
+ITEM_CROWKING_HEAD_DESC				= "死去的鴉族長老的頭部。";
+ITEM_CROWKING_TORSO_NAME			= "鴉族長老的軀幹";
+ITEM_CROWKING_TORSO_DESC			= "死去的鴉族長老的軀幹。";
+ITEM_CROWKING_PELVIS_NAME			= "鴉族長老的骨盆";
+ITEM_CROWKING_PELVIS_DESC			= "死去的鴉族長老的骨盆。";
+ITEM_CROWKING_ARM_LEFT_NAME			= "鴉族長老的左臂";
+ITEM_CROWKING_ARM_LEFT_DESC			= "死去的鴉族長老的左臂。";
+ITEM_CROWKING_ARM_RIGHT_NAME		= "鴉族長老的右臂";
+ITEM_CROWKING_ARM_RIGHT_DESC		= "死去的鴉族長老的右臂。";
+ITEM_CROWKING_LEG_LEFT_NAME			= "鴉族長老的左腿";
+ITEM_CROWKING_LEG_LEFT_DESC			= "死去的鴉族長老的左腿。";
+ITEM_CROWKING_LEG_RIGHT_NAME		= "鴉族長老的右腿";
+ITEM_CROWKING_LEG_RIGHT_DESC		= "死去的鴉族長老的右腿。";
+ITEM_CROWKING_HAND_RIGHT_NAME		= "鴉族長老的右手";
+ITEM_CROWKING_HAND_RIGHT_DESC		= "死去的鴉族長老的右手。";
+
+//-------------------------------------------------------------
+// Giblets - Fishdog
+
+ITEM_FISHDOG_HEAD_NAME				= "水生犬的頭部";
+ITEM_FISHDOG_HEAD_DESC				= "死去的水生犬的頭部。";
+ITEM_FISHDOG_TORSO_NAME				= "水生犬的軀幹";
+ITEM_FISHDOG_TORSO_DESC				= "死去的水生犬的軀幹。";
+ITEM_FISHDOG_ARM_LEFT_NAME			= "水生犬的左臂";
+ITEM_FISHDOG_ARM_LEFT_DESC			= "死去的水生犬的左臂。";
+ITEM_FISHDOG_ARM_RIGHT_NAME			= "水生犬的右臂";
+ITEM_FISHDOG_ARM_RIGHT_DESC			= "死去的水生犬的右臂。";
+ITEM_FISHDOG_LEG_LEFT_NAME			= "水生犬的左腿";
+ITEM_FISHDOG_LEG_LEFT_DESC			= "死去的水生犬的左腿。";
+ITEM_FISHDOG_LEG_RIGHT_NAME			= "水生犬的右腿";
+ITEM_FISHDOG_LEG_RIGHT_DESC			= "死去的水生犬的右腿。";
+
+//-------------------------------------------------------------
+// Giblets - Goatman
+
+ITEM_GOATMAN_HEAD_NAME				= "山羊怪的頭部";
+ITEM_GOATMAN_HEAD_DESC				= "死去的山羊怪的頭部。";
+ITEM_GOATMAN_TORSO_NAME				= "山羊怪的軀幹";
+ITEM_GOATMAN_TORSO_DESC				= "死去的山羊怪的軀幹。";
+ITEM_GOATMAN_PELVIS_NAME			= "山羊怪的骨盆";
+ITEM_GOATMAN_PELVIS_DESC			= "死去的山羊怪的骨盆。";
+ITEM_GOATMAN_ARM_LEFT_NAME			= "山羊怪的左臂";
+ITEM_GOATMAN_ARM_LEFT_DESC			= "死去的山羊怪的左臂。";
+ITEM_GOATMAN_ARM_RIGHT_NAME			= "山羊怪的右臂";
+ITEM_GOATMAN_ARM_RIGHT_DESC			= "死去的山羊怪的右臂。";
+ITEM_GOATMAN_LEG_LEFT_NAME			= "山羊怪的左腿";
+ITEM_GOATMAN_LEG_LEFT_DESC			= "死去的山羊怪的左腿。";
+ITEM_GOATMAN_LEG_RIGHT_NAME			= "山羊怪的右腿";
+ITEM_GOATMAN_LEG_RIGHT_DESC			= "死去的山羊怪的右腿。";
+ITEM_GOATMAN_HORN_RIGHT_NAME		= "山羊怪的右角";
+ITEM_GOATMAN_HORN_RIGHT_DESC		= "死去的山羊怪的右角。";
+ITEM_GOATMAN_HORN_LEFT_NAME			= "山羊怪的左角";
+ITEM_GOATMAN_HORN_LEFT_DESC			= "死去的山羊怪的左角。";
+
+
+//-------------------------------------------------------------
+// Giblets - Batbarber
+
+ITEM_BATBARBER_HEAD_NAME			= "蝠獸的頭部";
+ITEM_BATBARBER_HEAD_DESC			= "死去的蝠獸的頭部。";
+ITEM_BATBARBER_TORSO_NAME			= "蝠獸的軀幹";
+ITEM_BATBARBER_TORSO_DESC			= "死去的蝠獸的軀幹。";
+ITEM_BATBARBER_TAIL_NAME			= "蝠獸的尾部";
+ITEM_BATBARBER_TAIL_DESC			= "死去的蝠獸的尾部。";
+ITEM_BATBARBER_ARM_LEFT_NAME		= "蝠獸的左臂";
+ITEM_BATBARBER_ARM_LEFT_DESC		= "死去的蝠獸的左臂。";
+ITEM_BATBARBER_ARM_RIGHT_NAME		= "蝠獸的右臂";
+ITEM_BATBARBER_ARM_RIGHT_DESC		= "死去的蝠獸的右臂。";
+ITEM_BATBARBER_LEG_LEFT_NAME		= "蝠獸的左腿";
+ITEM_BATBARBER_LEG_LEFT_DESC		= "死去的蝠獸的左腿。";
+ITEM_BATBARBER_LEG_RIGHT_NAME		= "蝠獸的右腿";
+ITEM_BATBARBER_LEG_RIGHT_DESC		= "死去的蝠獸的右腿。";
+ITEM_BATBARBER_HAND_RIGHT_NAME		= "蝠獸的右手";
+ITEM_BATBARBER_HAND_RIGHT_DESC		= "死去的蝠獸的右手。";
+
+//-------------------------------------------------------------
+// Seasonal
+
+// Halloween
+ITEM_JACKOLANTERN_NAME				= "南瓜燈";
+ITEM_JACKOLANTERN_DESC				= "一個雕刻成面孔形狀的奇特蕪菁。或許是當地的應節風俗？";
+
+// Christmas
+ITEM_SNOWBALL_NAME					= "雪球";
+ITEM_SNOWBALL_DESC					= "一團積雪。是時候散播些歡樂的氣氛了。";

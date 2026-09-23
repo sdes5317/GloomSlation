@@ -1,0 +1,14 @@
+NONE							= "";
+
+CREDIT_AND						= "以及";
+CREDIT_PRESENTS					= "呈獻";
+CREDIT_PUBLISHER				= "New Blood Interactive";
+CREDIT_ROLE_LEADDEVELOPER		= "首席開發者";
+CREDIT_ROLE_DEVELOPER			= "開發者";
+CREDIT_ROLE_CODEVELOPER			= "共同開發者";
+CREDIT_ROLE_COMPOSER			= "音樂";
+
+// Names
+CREDIT_LEADDEVELOPER_1_NAME		= "Dillon Rogers";
+CREDIT_CODEVELOPER_1_NAME		= "David Szymanski";
+CREDIT_COMPOSER_NAME			= "Taylor Shechet";

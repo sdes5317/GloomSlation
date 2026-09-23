@@ -1,0 +1,14 @@
+NONE							= "無";
+ALL								= "全部";
+
+// Areas
+LEVEL_OTHER						= "通用";
+LEVEL_COAST_FISHERY				= "漁業工廠";
+LEVEL_COAST_CAVES				= "海蝕洞穴";
+LEVEL_COAST_CLIFFSIDE			= "懸崖邊";
+LEVEL_COAST_TAVERN				= "崖邊酒館";
+LEVEL_CITY_MARKET				= "市集";
+LEVEL_CITY_MARKET_SHOP			= "商店";
+LEVEL_CITY_UNDERPORT			= "下港區";
+LEVEL_CITY_UNDERPORT_HIVE		= "巢穴";
+LEVEL_DIMENSION_MIRROR			= "鏡中世界";
