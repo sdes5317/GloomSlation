@@ -201,6 +201,11 @@ namespace GloomSlation
 
             // Load asset bundle
             var bundle = AssetBundle.LoadFromFile(Path.Combine(langPath, "font.bundle"));
+            if (bundle == null)
+            {
+                LoggerInstance.Error("Unable to load font.bundle; verify the Unity version and installation.");
+                return;
+            }
             DebugMsg("Loaded asset bundle, available assets:");
             foreach (var name in bundle.GetAllAssetNames())
             {
@@ -693,7 +698,11 @@ namespace GloomSlation
             ref LanguageDataTypes dataType
         )
         {
-            __result = Melon<GloomSlation>.Instance.ReadLanguageData(dataType);
+            // Preserve game keys added after the translation files were created.
+            foreach (var entry in Melon<GloomSlation>.Instance.ReadLanguageData(dataType))
+            {
+                __result[entry.Key] = entry.Value;
+            }
         }
     }
 
