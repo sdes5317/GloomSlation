@@ -5,8 +5,9 @@ An unofficial Gloomwood translation project.
 This mod currently contains translation on:
 - English - original text, to be used like reference and starting point
 - [Russian](https://github.com/ErisOrder/GloomSlation-RU) - by [@pipo-cxx](https://github.com/pipo-cxx)
+- [Traditional Chinese](./Mods/GloomSlation/TraditionalChinese/) - included in this repository
 
-Translations are split into submodules.
+Some translations are split into submodules.
 
 ## Preferences
 Mod preferences are stored in file `Mods/GloomSlation/cfg.toml`. 
@@ -24,6 +25,7 @@ New-Item -Path .\Gloomwood -ItemType SymbolicLink -Value <path-to-your-Gloomwood
 ```
 
 ## [Creating new translation](./docs/adding-new-translation.md)
+## [Building and packaging Traditional Chinese](./docs/TRADITIONAL_CHINESE.md)
 ## Notes
 
 ### About using `UnityExplorer`
