@@ -7,3 +7,16 @@ obj
 Gloomwood
 Mods/GloomSlation/cfg.toml
 dist
+.antigravity-runs/
+__pycache__/
+tools/FontBundle/Library/
+tools/FontBundle/Logs/
+tools/FontBundle/Temp/
+tools/FontBundle/obj/
+tools/FontBundle/UserSettings/
+tools/FontBundle/Assets/NotoSansTC.asset*
+tools/FontBundle/Assets/TextMesh Pro/
+tools/FontBundle/Assets/TextMesh Pro.meta
+tools/FontBundle/ProjectSettings/*
+!tools/FontBundle/ProjectSettings/ProjectVersion.txt
+tools/FontBundle/*.log
