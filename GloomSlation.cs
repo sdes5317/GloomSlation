@@ -745,6 +745,30 @@ namespace GloomSlation
         }
     }
 
+    // The original journal row and Ellipsis overflow can suppress CJK labels.
+    // Give the translated title the space and overflow mode tested in-game.
+    [HarmonyPatch(typeof(JournalPanel), "AddCategoryListElement")]
+    static class PatchJournalListLabel
+    {
+        static void Postfix(JournalPanel __instance)
+        {
+            var list = __instance.CategoryButtonList;
+            if (list == null) return;
+
+            foreach (var text in list.GetComponentsInChildren<TextMeshProUGUI>(true))
+            {
+                if (text.gameObject.name != "UI_Text_Label"
+                    || text.transform.parent == null
+                    || !text.transform.parent.name.StartsWith("Journal_List_Element")
+                    || text.font == null
+                    || text.font.name != "NotoSansTC") continue;
+
+                text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 0.18f);
+                text.overflowMode = TextOverflowModes.Overflow;
+            }
+        }
+    }
+
     /// Patch entity model when it is created, this fixes texture patching on first
     /// examination in inventory (and probably not only in it)
     /// TODO: Find a more general way to patch objects on creation? 
@@ -853,4 +877,3 @@ namespace GloomSlation
         }
     }
 }
-
