@@ -4,21 +4,21 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <ExcludeGeneratedDebugSymbol>False</ExcludeGeneratedDebugSymbol>
     <IncludeSymbols>True</IncludeSymbols>
     <EnableDefaultCompileItems>False</EnableDefaultCompileItems>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Compile Include="GloomSlation.cs" />
   </ItemGroup>
@@ -26,68 +26,71 @@
   <ItemGroup>
     <EmbeddedResource Remove="%2a%2a/%2a.resx" />
   </ItemGroup>
-  
+
+  <PropertyGroup>
+    <GloomwoodPath Condition="'$(GloomwoodPath)' == '' and Exists('.\Gloomwood')">.\Gloomwood</GloomwoodPath>
+    <GloomwoodManaged Condition="'$(GloomwoodManaged)' == ''">$(GloomwoodPath)\Gloomwood_Data\Managed</GloomwoodManaged>
+
+    <MelonLoaderNet35 Condition="'$(MelonLoaderNet35)' == '' and Exists('.\bin\deps\MelonLoader\net35')">.\bin\deps\MelonLoader\net35</MelonLoaderNet35>
+    <MelonLoaderNet35 Condition="'$(MelonLoaderNet35)' == '' and Exists('.\Gloomwood\MelonLoader\net35')">.\Gloomwood\MelonLoader\net35</MelonLoaderNet35>
+    <MelonLoaderNet35 Condition="'$(MelonLoaderNet35)' == ''">$(GloomwoodPath)\MelonLoader\net35</MelonLoaderNet35>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>.\Gloomwood\MelonLoader\net35\0Harmony.dll</HintPath>
+      <HintPath>$(MelonLoaderNet35)\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>.\Gloomwood\MelonLoader\net35\MelonLoader.dll</HintPath>
+      <HintPath>$(MelonLoaderNet35)\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>.\Gloomwood\Gloomwood_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>$(GloomwoodManaged)\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
   </ItemGroup>
-  
+
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
