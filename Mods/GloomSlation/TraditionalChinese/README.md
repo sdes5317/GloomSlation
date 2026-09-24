@@ -2,6 +2,10 @@
 
 此包包含目前八個分類的繁中翻譯、GloomSlation 模組、Noto Sans TC 字型包與 MelonLoader 0.7.3 x64。
 
+## 支援版本
+
+目前已在 Windows x64、Gloomwood **0.889**（Unity 2021.3.45f2）、MelonLoader **0.7.3 x64** 上測試；其他遊戲或載入器版本尚未驗證。玩家不需要安裝 Unity Editor。
+
 ## 安裝
 
 1. 關閉 Gloomwood。若已安裝 GloomSlation 或 MelonLoader，先備份將被覆蓋的檔案，尤其是 `Mods/GloomSlation/cfg.toml`。
