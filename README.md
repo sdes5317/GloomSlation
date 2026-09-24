@@ -5,7 +5,7 @@ An unofficial Gloomwood translation project.
 This mod currently contains translation on:
 - English - original text, to be used like reference and starting point
 - [Russian](https://github.com/ErisOrder/GloomSlation-RU) - by [@pipo-cxx](https://github.com/pipo-cxx)
-- [Traditional Chinese](./Mods/GloomSlation/TraditionalChinese/) - included in this repository
+- [Traditional Chinese](./Mods/GloomSlation/TraditionalChinese/) - by [sdes5317](https://github.com/sdes5317)
 
 Some translations are split into submodules.
 
