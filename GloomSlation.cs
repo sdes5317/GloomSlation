@@ -148,12 +148,14 @@ namespace GloomSlation
         private readonly HashSet<int> processedAudioIds = new HashSet<int>();
         private readonly HashSet<string> specializedTex = new HashSet<string>();
         private readonly AdjustVisitor postInitAdjustVisitor = new AdjustVisitor();
+        private readonly Dictionary<JournalPanel, int> pendingJournalPanels = new Dictionary<JournalPanel, int>();
 
         private static readonly string modPath = "Mods\\GloomSlation";
 
         private static readonly Regex notIdentRex = new Regex("[^0-9a-zA-Z_]+");
 
         private string langPath = "";
+        private bool isTraditionalChinese = false;
         private bool debugMode = false;
 
         [DllImport("kernel32.dll")]
@@ -181,6 +183,7 @@ namespace GloomSlation
             var hideConsole = prefCategory.CreateEntry<bool>("hideConsole", true);
 
             langPath = Path.Combine(modPath, languageEntry.Value);
+            isTraditionalChinese = languageEntry.Value == "TraditionalChinese";
             debugMode = debugEntry.Value;
 
             // Hide console
@@ -332,6 +335,39 @@ namespace GloomSlation
         {
             var scene = SceneManager.GetSceneByBuildIndex(buildIndex);
             RunAdjustments(scene.GetRootGameObjects(), sceneName);
+        }
+
+        // Journal list buttons are populated after their panel is created.
+        // Wait two frames, as in the in-game layout test, before adjusting them.
+        public override void OnLateUpdate()
+        {
+            foreach (var entry in pendingJournalPanels.ToArray())
+            {
+                var panel = entry.Key;
+                if (panel == null)
+                {
+                    pendingJournalPanels.Remove(entry.Key);
+                    continue;
+                }
+                if (Time.frameCount < entry.Value || !panel.gameObject.activeInHierarchy) continue;
+                pendingJournalPanels.Remove(panel);
+
+                foreach (var text in panel.GetComponentsInChildren<TextMeshProUGUI>(true))
+                {
+                    if (!text.gameObject.activeInHierarchy
+                        || text.gameObject.name != "UI_Text_Label"
+                        || text.transform.parent == null
+                        || !text.transform.parent.name.StartsWith("Journal_List_Element")) continue;
+
+                    text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 0.18f);
+                    text.overflowMode = TextOverflowModes.Overflow;
+                }
+            }
+        }
+
+        public void QueueJournalPanel(JournalPanel panel)
+        {
+            if (isTraditionalChinese) pendingJournalPanels[panel] = Time.frameCount + 2;
         }
 
         public void RunAdjustments(GameObject[] roots, string scene) {
@@ -746,26 +782,12 @@ namespace GloomSlation
     }
 
     // The original journal row and Ellipsis overflow can suppress CJK labels.
-    // Give the translated title the space and overflow mode tested in-game.
     [HarmonyPatch(typeof(JournalPanel), "AddCategoryListElement")]
     static class PatchJournalListLabel
     {
         static void Postfix(JournalPanel __instance)
         {
-            var list = __instance.CategoryButtonList;
-            if (list == null) return;
-
-            foreach (var text in list.GetComponentsInChildren<TextMeshProUGUI>(true))
-            {
-                if (text.gameObject.name != "UI_Text_Label"
-                    || text.transform.parent == null
-                    || !text.transform.parent.name.StartsWith("Journal_List_Element")
-                    || text.font == null
-                    || text.font.name != "NotoSansTC") continue;
-
-                text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 0.18f);
-                text.overflowMode = TextOverflowModes.Overflow;
-            }
+            Melon<GloomSlation>.Instance.QueueJournalPanel(__instance);
         }
     }
 
