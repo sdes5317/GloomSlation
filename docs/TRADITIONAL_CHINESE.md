@@ -35,7 +35,15 @@ dotnet build .\GloomSlation.csproj --configuration Release "-p:GloomwoodPath=<Gl
 .\scripts\package_traditional_chinese.ps1
 ```
 
-把 `<Gloomwood 安裝目錄>` 換成實際路徑；若專案根目錄已有指向遊戲的 `Gloomwood` 連結，可省略整個 `-p:GloomwoodPath=...` 參數。若 MelonLoader DLL 不在 `bin/deps/MelonLoader/net35`，可指定 `-p:MelonLoaderNet35=...`。打包腳本不會修改遊戲目錄或翻譯來源。它讀取 Release DLL、目前八個翻譯檔、`font.bundle`、`fontMap.json`、設定範本、字型授權及官方載入器 ZIP，輸出 `dist/GloomSlation-TraditionalChinese.zip`。ZIP 根目錄有 `MelonLoader/`、`version.dll`、`Mods/`、`README.md`；不含遊戲組件。既有的 `dist/` 其他檔案不會被清除。
+把 `<Gloomwood 安裝目錄>` 換成實際路徑；若專案根目錄已有指向遊戲的 `Gloomwood` 連結，可省略整個 `-p:GloomwoodPath=...` 參數。若 MelonLoader DLL 不在 `bin/deps/MelonLoader/net35`，可指定 `-p:MelonLoaderNet35=...`。打包腳本不會修改遊戲目錄或翻譯來源。它讀取 Release DLL、目前八個翻譯檔、`font.bundle`、`fontMap.json`、設定範本、字型授權及官方載入器 ZIP，輸出 `dist/GloomSlation-TraditionalChinese-YYYYMMDD_N.zip`（例如 `GloomSlation-TraditionalChinese-20260927_1.zip`）。
+
+打包檔名與版本號遞增規則如下：
+
+- **日期（YYYYMMDD）**：取自當日本機日期。
+- **序號（N）**：每日從 `1` 起算；若 `dist/` 中已有當日匹配格式的編號 ZIP，則取該日現存最大編號加 `1`（例如當日已有 `_1.zip`，再次打包會自動產生 `_2.zip`）。
+- **覆蓋保護**：自動忽略舊版未編號檔案（例如 `GloomSlation-TraditionalChinese.zip`）與其他不相關檔案，且絕不覆蓋任何既有發行包。
+
+ZIP 根目錄有 `MelonLoader/`、`version.dll`、`Mods/`、`README.md`；不含遊戲組件。既有的 `dist/` 其他檔案不會被清除。
 
 ## 遊戲內驗收
 

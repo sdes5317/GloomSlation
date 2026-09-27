@@ -10,7 +10,6 @@ $sourceDir = Join-Path $repoRoot 'Mods/GloomSlation/TraditionalChinese'
 $releaseDll = Join-Path $repoRoot 'bin/Release/netstandard2.1/GloomSlation.dll'
 $configTemplate = Join-Path $repoRoot 'Mods/GloomSlation/cfg.example.toml'
 $fontLicense = Join-Path $repoRoot 'tools/FontBundle/Assets/Fonts/OFL.txt'
-$zipPath = Join-Path $distDir 'GloomSlation-TraditionalChinese.zip'
 if (-not $MelonLoaderZip) {
     $MelonLoaderZip = Join-Path $repoRoot 'bin/deps/MelonLoader.x64.zip'
 }
@@ -33,6 +32,28 @@ if ($loaderHash -ne $expectedLoaderHash) {
 }
 
 New-Item -ItemType Directory -Path $distDir -Force | Out-Null
+
+$dateStamp = (Get-Date).ToString('yyyyMMdd')
+$pattern = '^GloomSlation-TraditionalChinese-' + $dateStamp + '_(\d+)\.zip$'
+$existingNumbers = @(
+    Get-ChildItem -LiteralPath $distDir -File -Force | ForEach-Object {
+        if ($_.Name -match $pattern) {
+            [int]$Matches[1]
+        }
+    }
+)
+
+$nextNumber = 1
+if ($existingNumbers.Count -gt 0) {
+    $nextNumber = ($existingNumbers | Measure-Object -Maximum).Maximum + 1
+}
+
+$zipName = "GloomSlation-TraditionalChinese-${dateStamp}_${nextNumber}.zip"
+$zipPath = Join-Path $distDir $zipName
+if (Test-Path -LiteralPath $zipPath) {
+    throw "Target package already exists: $zipPath"
+}
+
 $stageDir = Join-Path $distDir ("stage_traditional_chinese_{0}" -f [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stageDir | Out-Null
 
@@ -56,7 +77,7 @@ try {
     Copy-Item -LiteralPath (Join-Path $sourceDir 'README.md') -Destination (Join-Path $stageDir 'README.md')
 
     $packageContents = @(Get-ChildItem -LiteralPath $stageDir | ForEach-Object FullName)
-    Compress-Archive -LiteralPath $packageContents -DestinationPath $zipPath -Force
+    Compress-Archive -LiteralPath $packageContents -DestinationPath $zipPath
     Write-Host "Created $zipPath"
 }
 finally {
